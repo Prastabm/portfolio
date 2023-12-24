@@ -1,0 +1,124 @@
+*{
+    font-family: sans-serif;
+  }
+  body,html{
+    padding: 0;
+    margin: 0;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  .navigation{
+    display: flex;
+    justify-content: space-between;
+    background-color: #14213d;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    >.logo{
+      padding-left: 10px;
+      padding-top: 15px;
+      >a{
+        text-decoration: none;
+        color:  gainsboro;
+        font-size: larger;
+        font-weight: lighter;
+      }
+    }
+    >.links{
+      padding-right: 10px;
+      padding-top: 15px;
+      >a{
+        text-decoration: none;
+        color: white;
+        font-weight: lighter;
+        margin: 10px 6px;
+        height: 100%;
+        padding-bottom: 15px;
+        
+      }
+      >a:hover{
+        border-bottom: 2px solid #fca311;
+        color: #fca311;
+      }
+    }
+  }
+  #intro{
+    background-color: #14213d;
+    height: 95vh;
+    display: flex;
+    >.pic{
+       width: 20%; 
+       height: 95vh;
+       background-color: #fca311;
+    }
+    >.desc{
+        >h1{
+            margin-left: 20%;
+            margin-top: 8%;
+            font-size: 100px;
+            >.drop{
+                color: #fca311;
+            }
+            >.slide{
+                color:white;
+                animation: fadeIn 4s;
+            }
+        }
+        >p{
+            font-size: 30px;
+            margin-left: 20%;
+            color: #fca311;
+        }
+        >a{
+            height: 100px;
+            width: 150px;
+            border:1px solid #fca311;
+            background-color: #14213d;
+            color: #fca311;
+            text-decoration: none;
+            padding: 20px;
+            border-radius: 3px;
+            margin-left: 20%;
+        }
+        >a:hover{
+            background-color: #fca311;
+            color: white;
+        }
+        
+        
+    }
+  }
+  .skills{
+    height: 70vh;
+    padding: 20px;
+    animation: fadeIn 10s; 
+    >h1{
+        font-size: 50px;
+        font-weight: lighter;
+    }
+    >.grid-container{
+      padding: 50px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
+      grid-template-rows: repeat(2, 150px); /* 2 rows with a fixed height of 100px */
+      gap: 10px;
+      >.content{
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            
+            border-radius: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    }
+    >.content:hover{
+        border: 5px solid #fca311;
+    }
+    }
+    
+  }
+  @keyframes fadeIn{
+    from{opacity: 0} to {opacity: 1;}
+  }
