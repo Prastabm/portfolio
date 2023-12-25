@@ -5,44 +5,19 @@
     padding: 0;
     margin: 0;
   }
+  .nav-link{
+    color: white;
+}
   html{
     scroll-behavior: smooth;
   }
-  .navigation{
-    display: flex;
-    justify-content: space-between;
-    background-color: #14213d;
-    padding: 0;
-    margin: 0;
-    height: 50px;
-    >.logo{
-      padding-left: 10px;
-      padding-top: 15px;
-      >a{
-        text-decoration: none;
-        color:  gainsboro;
-        font-size: larger;
-        font-weight: lighter;
-      }
-    }
-    >.links{
-      padding-right: 10px;
-      padding-top: 15px;
-      >a{
-        text-decoration: none;
-        color: white;
-        font-weight: lighter;
-        margin: 10px 6px;
-        height: 100%;
-        padding-bottom: 15px;
-        
-      }
-      >a:hover{
-        border-bottom: 2px solid #fca311;
-        color: #fca311;
-      }
-    }
-  }
+.nav-link{
+  color: white;
+}
+.nav-link:hover{
+  color:#fca311;
+  border-bottom: 1px solid #fca311;
+}
   #intro{
     background-color: #14213d;
     height: 95vh;
@@ -51,12 +26,19 @@
        width: 20%; 
        height: 95vh;
        background-color: #fca311;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       >svg{
+        width: 100%;
+       }
     }
     >.desc{
+      padding-top: 10%;
+      padding-right: 5%;
         >h1{
-            margin-left: 20%;
-            margin-top: 8%;
-            font-size: 100px;
+           
+            font-size: 85px;
             >.drop{
                 color: #fca311;
             }
@@ -67,7 +49,7 @@
         }
         >p{
             font-size: 30px;
-            margin-left: 20%;
+            
             color: #fca311;
         }
         >a{
@@ -79,7 +61,7 @@
             text-decoration: none;
             padding: 20px;
             border-radius: 3px;
-            margin-left: 20%;
+            
         }
         >a:hover{
             background-color: #fca311;
