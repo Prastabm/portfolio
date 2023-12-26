@@ -1,130 +1,122 @@
-*{
-    font-family: sans-serif;
-  }
-  body,html{
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-  .nav-link{
-    color: white;
+html,body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
 }
-  html{
-    scroll-behavior: smooth;
-  }
 .nav-link{
-  color: white;
+color: white;
 }
 .nav-link:hover{
-  color:#fca311;
-  border-bottom: 1px solid #fca311;
+color:#fca311;
+border-bottom: 1px solid #fca311;
 }
-  #intro{
-    background-color: #14213d;
-    height: 95vh;
-    display: flex;
-    width: 100%;
-    >.pic{
-       width: 15%; 
-       height: 95vh;
-       background-color: #fca311;
-       display: flex;
-       flex-direction: column;
-       justify-content: space-between;
-       >svg{
-        width: 100%;
-       }
-    }
-    >.desc{
-      padding-top: 10%;
-      padding-right: 3%;
-        >h1{
-           
-            font-size: 10vh;
-            >.drop{
-                color: #fca311;
-            }
-            >.slide{
-                color:white;
-                animation: fadeIn 4s;
-            }
-        }
-        >p{
-            font-size: 30px;
-            
-            color: #fca311;
-        }
-        >a{
-            height: 100px;
-            width: 150px;
-            border:1px solid #fca311;
-            background-color: #14213d;
-            color: #fca311;
-            text-decoration: none;
-            padding: 20px;
-            border-radius: 3px;
-            
-        }
-        >a:hover{
-            background-color: #fca311;
-            color: white;
-        }
-        
-        
-    }
+#intro{
+margin: 0;
+max-width: 100%;
+padding: 0;
+height: 95vh;
+background-color: #14213d;
+}
+
+.left-cont{
+max-width: 15vw;
+}
+.right-cont{
+max-width: 85vw;
+padding-top: 12%;
+>h1{
+min-width:50%;
+
+color: white;
+>.drop{
+  color: #fca311;
+}
+}
+>p{
+color: #fca311;
+font-size: 20px;
+}
+}
+.intro-row{
+background-color: #14213d;
+}
+#skills{
+padding-top: 50px;
+height: auto;
+>h2{
+width: 50%;
+border-bottom: 2px solid #fca311;
+padding-bottom: 7px;
+}
+>.row{
+>.col-3{
+  max-height: 220px;
+  min-height: 50px;
+}
+>.col-3:hover{
+border: 2px solid #fca311;
+border-radius: 2rem;
+}
+}
+
+}
+
+#projects{
+height: auto;
+padding: 50px;
+background-color: #14213d;
+
+max-width: 100%;
+>h2{
+width: 50%;
+border-bottom: 2px solid #fca311;
+padding-bottom: 7px;
+color: white; 
+}
+>.row{
+>.project{
+  padding-top: 50px;
+  >.project{
+      margin-left: auto;
+      margin-right: auto;
   }
-  .skills{
-    height: 70vh;
-    padding-top:25px;
-    animation: fadeIn 10s; 
-    >h1{
-        font-size: 50px;
-        font-weight: lighter;
-        margin-bottom: 30px;
-    }
-    >.grid-container{
-      
-      display: grid;
-      grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
-      grid-template-rows: repeat(2, 150px); /* 2 rows with a fixed height of 100px */
-      gap: 10px;
-      >.content{
-            background-color: white;
-            padding: 20px;
-            text-align: center;
-            
-            border-radius: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-    }
-    >.content:hover{
-        border: 5px solid #fca311;
-    }
-    }
+}
+}
+}
+#education{
+max-width: 100%;
+padding: 50px;
+>h2{
+width: 50%;
+border-bottom: 2px solid #fca311;
+padding-bottom: 7px;
+}
+>.row{
+padding: 50px;
+>.ed{
   
-    
-  }
-  .projects{
-    background-color: #14213d;
-    height: auto;
-    padding-top: 20px;
-    >.container{
-      >.row{
-        padding-left: 10%;
+  >.card{
+      margin-right: auto;
+  margin-left: auto;
+      >img{
+          max-height: 200px;
+          max-width: 200px;
+          margin-left: auto;
+          margin-right: auto;
       }
-      >h1{
-        font-size: 50px;
-        color: white;
-        font-weight: lighter;
-        
-      }
-    }
-   
   }
-  .contact{
-    height: 100vh;
-  }
-  @keyframes fadeIn{
-    from{opacity: 0} to {opacity: 1;}
-  }
+}
+}
+
+}
+.footer{
+padding: 25px;
+padding-right: 50px;
+>p{margin-bottom: 0; text-align: center;}
+}
+iframe{
+max-width: 100vw;
+min-width: 50vh;
+
+}
