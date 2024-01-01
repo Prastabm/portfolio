@@ -389,6 +389,7 @@ padding: 50px;
 .ecard:hover{
   transform: scale(1.1);
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin-bottom: 25px;
 }
 .cont{
   margin-left: auto;
