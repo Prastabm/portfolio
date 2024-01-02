@@ -1,325 +1,451 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Prastab's Portfolio</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Koulen&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!--Scroll to top button-->
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+html,body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+body{ overflow-x: hidden;}
+body::-webkit-scrollbar{
+  width: 0.5vw;
+}
+body::-webkit-scrollbar-track{
+  background-color: #14213d;
 
-    <nav class="navbar navbar-expand-md sticky-top" style="background-color: #14213d; width: 100%;">
-        <div class="container justify-content-between">
-            <a class="navbar-brand" style="color: white;" href="#">Prastab</a>
-            
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-labels="Expand Navigation" style="color: white;">
-                <span class="navbar-toggler-icon " ></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="nav" style="float: right;">
-                <ul class="navbar-nav ">
-                    
-                <li class="nav-item"><a class="nav-link" href="#intro">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#contact">Contact Me</a></li>
-            </ul>
-            </div>
-            
-        </div>
-    </nav>
-    <!-- #intro -->
-    <div class="container" id="intro">
-        <div class="row intro-row" style="height: 100%;">
-            <div class="col-md-3 left-cont" style="padding:0;display:  flex; flex-direction: column; justify-content: space-between; background-color: #fca311; height: 100%;">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 1422 800" opacity="0.76"><g stroke-width="2.5" stroke="#14213d" fill="none" stroke-linecap="butt"><line x1="40" y1="0" x2="0" y2="40" opacity="1.00"></line><line x1="40" y1="0" x2="80" y2="40" opacity="1.00"></line><line x1="80" y1="0" x2="120" y2="40" opacity="1.00"></line><line x1="160" y1="0" x2="120" y2="40" opacity="1.00"></line><line x1="200" y1="0" x2="160" y2="40" opacity="1.00"></line><line x1="240" y1="0" x2="200" y2="40" opacity="1.00"></line><line x1="240" y1="0" x2="280" y2="40" opacity="1.00"></line><line x1="320" y1="0" x2="280" y2="40" opacity="1.00"></line><line x1="360" y1="0" x2="320" y2="40" opacity="1.00"></line><line x1="400" y1="0" x2="360" y2="40" opacity="1.00"></line><line x1="440" y1="0" x2="400" y2="40" opacity="1.00"></line><line x1="480" y1="0" x2="440" y2="40" opacity="1.00"></line><line x1="520" y1="0" x2="480" y2="40" opacity="1.00"></line><line x1="560" y1="0" x2="520" y2="40" opacity="1.00"></line><line x1="600" y1="0" x2="560" y2="40" opacity="1.00"></line><line x1="600" y1="0" x2="640" y2="40" opacity="1.00"></line><line x1="680" y1="0" x2="640" y2="40" opacity="1.00"></line><line x1="680" y1="0" x2="720" y2="40" opacity="1.00"></line><line x1="760" y1="0" x2="720" y2="40" opacity="1.00"></line><line x1="800" y1="0" x2="760" y2="40" opacity="1.00"></line><line x1="840" y1="0" x2="800" y2="40" opacity="1.00"></line><line x1="880" y1="0" x2="840" y2="40" opacity="1.00"></line><line x1="880" y1="0" x2="920" y2="40" opacity="1.00"></line><line x1="920" y1="0" x2="960" y2="40" opacity="1.00"></line><line x1="1000" y1="0" x2="960" y2="40" opacity="1.00"></line><line x1="1040" y1="0" x2="1000" y2="40" opacity="1.00"></line><line x1="1080" y1="0" x2="1040" y2="40" opacity="1.00"></line><line x1="1120" y1="0" x2="1080" y2="40" opacity="1.00"></line><line x1="1120" y1="0" x2="1160" y2="40" opacity="1.00"></line><line x1="1160" y1="0" x2="1200" y2="40" opacity="1.00"></line><line x1="1240" y1="0" x2="1200" y2="40" opacity="1.00"></line><line x1="1280" y1="0" x2="1240" y2="40" opacity="1.00"></line><line x1="1280" y1="0" x2="1320" y2="40" opacity="1.00"></line><line x1="1360" y1="0" x2="1320" y2="40" opacity="1.00"></line><line x1="1360" y1="0" x2="1400" y2="40" opacity="1.00"></line><line x1="1440" y1="0" x2="1400" y2="40" opacity="1.00"></line><line x1="40" y1="40" x2="0" y2="80" opacity="0.95"></line><line x1="80" y1="40" x2="40" y2="80" opacity="0.95"></line><line x1="120" y1="40" x2="80" y2="80" opacity="0.95"></line><line x1="160" y1="40" x2="120" y2="80" opacity="0.95"></line><line x1="160" y1="40" x2="200" y2="80" opacity="0.95"></line><line x1="240" y1="40" x2="200" y2="80" opacity="0.95"></line><line x1="280" y1="40" x2="240" y2="80" opacity="0.95"></line><line x1="280" y1="40" x2="320" y2="80" opacity="0.95"></line><line x1="360" y1="40" x2="320" y2="80" opacity="0.95"></line><line x1="400" y1="40" x2="360" y2="80" opacity="0.95"></line><line x1="440" y1="40" x2="400" y2="80" opacity="0.95"></line><line x1="480" y1="40" x2="440" y2="80" opacity="0.95"></line><line x1="480" y1="40" x2="520" y2="80" opacity="0.95"></line><line x1="560" y1="40" x2="520" y2="80" opacity="0.95"></line><line x1="600" y1="40" x2="560" y2="80" opacity="0.95"></line><line x1="640" y1="40" x2="600" y2="80" opacity="0.95"></line><line x1="680" y1="40" x2="640" y2="80" opacity="0.95"></line><line x1="720" y1="40" x2="680" y2="80" opacity="0.95"></line><line x1="760" y1="40" x2="720" y2="80" opacity="0.95"></line><line x1="800" y1="40" x2="760" y2="80" opacity="0.95"></line><line x1="840" y1="40" x2="800" y2="80" opacity="0.95"></line><line x1="880" y1="40" x2="840" y2="80" opacity="0.95"></line><line x1="920" y1="40" x2="880" y2="80" opacity="0.95"></line><line x1="920" y1="40" x2="960" y2="80" opacity="0.95"></line><line x1="1000" y1="40" x2="960" y2="80" opacity="0.95"></line><line x1="1000" y1="40" x2="1040" y2="80" opacity="0.95"></line><line x1="1080" y1="40" x2="1040" y2="80" opacity="0.95"></line><line x1="1080" y1="40" x2="1120" y2="80" opacity="0.95"></line><line x1="1160" y1="40" x2="1120" y2="80" opacity="0.95"></line><line x1="1160" y1="40" x2="1200" y2="80" opacity="0.95"></line><line x1="1200" y1="40" x2="1240" y2="80" opacity="0.95"></line><line x1="1240" y1="40" x2="1280" y2="80" opacity="0.95"></line><line x1="1280" y1="40" x2="1320" y2="80" opacity="0.95"></line><line x1="1320" y1="40" x2="1360" y2="80" opacity="0.95"></line><line x1="1400" y1="40" x2="1360" y2="80" opacity="0.95"></line><line x1="1440" y1="40" x2="1400" y2="80" opacity="0.95"></line><line x1="40" y1="80" x2="0" y2="120" opacity="0.91"></line><line x1="80" y1="80" x2="40" y2="120" opacity="0.91"></line><line x1="80" y1="80" x2="120" y2="120" opacity="0.91"></line><line x1="120" y1="80" x2="160" y2="120" opacity="0.91"></line><line x1="160" y1="80" x2="200" y2="120" opacity="0.91"></line><line x1="240" y1="80" x2="200" y2="120" opacity="0.91"></line><line x1="280" y1="80" x2="240" y2="120" opacity="0.91"></line><line x1="320" y1="80" x2="280" y2="120" opacity="0.91"></line><line x1="360" y1="80" x2="320" y2="120" opacity="0.91"></line><line x1="400" y1="80" x2="360" y2="120" opacity="0.91"></line><line x1="400" y1="80" x2="440" y2="120" opacity="0.91"></line><line x1="440" y1="80" x2="480" y2="120" opacity="0.91"></line><line x1="480" y1="80" x2="520" y2="120" opacity="0.91"></line><line x1="560" y1="80" x2="520" y2="120" opacity="0.91"></line><line x1="600" y1="80" x2="560" y2="120" opacity="0.91"></line><line x1="640" y1="80" x2="600" y2="120" opacity="0.91"></line><line x1="640" y1="80" x2="680" y2="120" opacity="0.91"></line><line x1="720" y1="80" x2="680" y2="120" opacity="0.91"></line><line x1="720" y1="80" x2="760" y2="120" opacity="0.91"></line><line x1="760" y1="80" x2="800" y2="120" opacity="0.91"></line><line x1="800" y1="80" x2="840" y2="120" opacity="0.91"></line><line x1="840" y1="80" x2="880" y2="120" opacity="0.91"></line><line x1="880" y1="80" x2="920" y2="120" opacity="0.91"></line><line x1="960" y1="80" x2="920" y2="120" opacity="0.91"></line><line x1="960" y1="80" x2="1000" y2="120" opacity="0.91"></line><line x1="1040" y1="80" x2="1000" y2="120" opacity="0.91"></line><line x1="1040" y1="80" x2="1080" y2="120" opacity="0.91"></line><line x1="1120" y1="80" x2="1080" y2="120" opacity="0.91"></line><line x1="1160" y1="80" x2="1120" y2="120" opacity="0.91"></line><line x1="1160" y1="80" x2="1200" y2="120" opacity="0.91"></line><line x1="1200" y1="80" x2="1240" y2="120" opacity="0.91"></line><line x1="1280" y1="80" x2="1240" y2="120" opacity="0.91"></line><line x1="1320" y1="80" x2="1280" y2="120" opacity="0.91"></line><line x1="1320" y1="80" x2="1360" y2="120" opacity="0.91"></line><line x1="1400" y1="80" x2="1360" y2="120" opacity="0.91"></line><line x1="1440" y1="80" x2="1400" y2="120" opacity="0.91"></line><line x1="0" y1="120" x2="40" y2="160" opacity="0.86"></line><line x1="80" y1="120" x2="40" y2="160" opacity="0.86"></line><line x1="120" y1="120" x2="80" y2="160" opacity="0.86"></line><line x1="160" y1="120" x2="120" y2="160" opacity="0.86"></line><line x1="200" y1="120" x2="160" y2="160" opacity="0.86"></line><line x1="240" y1="120" x2="200" y2="160" opacity="0.86"></line><line x1="280" y1="120" x2="240" y2="160" opacity="0.86"></line><line x1="280" y1="120" x2="320" y2="160" opacity="0.86"></line><line x1="320" y1="120" x2="360" y2="160" opacity="0.86"></line><line x1="360" y1="120" x2="400" y2="160" opacity="0.86"></line><line x1="400" y1="120" x2="440" y2="160" opacity="0.86"></line><line x1="440" y1="120" x2="480" y2="160" opacity="0.86"></line><line x1="520" y1="120" x2="480" y2="160" opacity="0.86"></line><line x1="560" y1="120" x2="520" y2="160" opacity="0.86"></line><line x1="600" y1="120" x2="560" y2="160" opacity="0.86"></line><line x1="640" y1="120" x2="600" y2="160" opacity="0.86"></line><line x1="680" y1="120" x2="640" y2="160" opacity="0.86"></line><line x1="720" y1="120" x2="680" y2="160" opacity="0.86"></line><line x1="760" y1="120" x2="720" y2="160" opacity="0.86"></line><line x1="800" y1="120" x2="760" y2="160" opacity="0.86"></line><line x1="800" y1="120" x2="840" y2="160" opacity="0.86"></line><line x1="840" y1="120" x2="880" y2="160" opacity="0.86"></line><line x1="880" y1="120" x2="920" y2="160" opacity="0.86"></line><line x1="960" y1="120" x2="920" y2="160" opacity="0.86"></line><line x1="1000" y1="120" x2="960" y2="160" opacity="0.86"></line><line x1="1040" y1="120" x2="1000" y2="160" opacity="0.86"></line><line x1="1040" y1="120" x2="1080" y2="160" opacity="0.86"></line><line x1="1080" y1="120" x2="1120" y2="160" opacity="0.86"></line><line x1="1160" y1="120" x2="1120" y2="160" opacity="0.86"></line><line x1="1200" y1="120" x2="1160" y2="160" opacity="0.86"></line><line x1="1240" y1="120" x2="1200" y2="160" opacity="0.86"></line><line x1="1240" y1="120" x2="1280" y2="160" opacity="0.86"></line><line x1="1320" y1="120" x2="1280" y2="160" opacity="0.86"></line><line x1="1360" y1="120" x2="1320" y2="160" opacity="0.86"></line><line x1="1400" y1="120" x2="1360" y2="160" opacity="0.86"></line><line x1="1400" y1="120" x2="1440" y2="160" opacity="0.86"></line><line x1="40" y1="160" x2="0" y2="200" opacity="0.81"></line><line x1="80" y1="160" x2="40" y2="200" opacity="0.81"></line><line x1="80" y1="160" x2="120" y2="200" opacity="0.81"></line><line x1="160" y1="160" x2="120" y2="200" opacity="0.81"></line><line x1="160" y1="160" x2="200" y2="200" opacity="0.81"></line><line x1="200" y1="160" x2="240" y2="200" opacity="0.81"></line><line x1="280" y1="160" x2="240" y2="200" opacity="0.81"></line><line x1="320" y1="160" x2="280" y2="200" opacity="0.81"></line><line x1="360" y1="160" x2="320" y2="200" opacity="0.81"></line><line x1="360" y1="160" x2="400" y2="200" opacity="0.81"></line><line x1="400" y1="160" x2="440" y2="200" opacity="0.81"></line><line x1="440" y1="160" x2="480" y2="200" opacity="0.81"></line><line x1="480" y1="160" x2="520" y2="200" opacity="0.81"></line><line x1="560" y1="160" x2="520" y2="200" opacity="0.81"></line><line x1="600" y1="160" x2="560" y2="200" opacity="0.81"></line><line x1="640" y1="160" x2="600" y2="200" opacity="0.81"></line><line x1="640" y1="160" x2="680" y2="200" opacity="0.81"></line><line x1="720" y1="160" x2="680" y2="200" opacity="0.81"></line><line x1="760" y1="160" x2="720" y2="200" opacity="0.81"></line><line x1="800" y1="160" x2="760" y2="200" opacity="0.81"></line><line x1="840" y1="160" x2="800" y2="200" opacity="0.81"></line><line x1="880" y1="160" x2="840" y2="200" opacity="0.81"></line><line x1="920" y1="160" x2="880" y2="200" opacity="0.81"></line><line x1="960" y1="160" x2="920" y2="200" opacity="0.81"></line><line x1="1000" y1="160" x2="960" y2="200" opacity="0.81"></line><line x1="1040" y1="160" x2="1000" y2="200" opacity="0.81"></line><line x1="1040" y1="160" x2="1080" y2="200" opacity="0.81"></line><line x1="1080" y1="160" x2="1120" y2="200" opacity="0.81"></line><line x1="1160" y1="160" x2="1120" y2="200" opacity="0.81"></line><line x1="1200" y1="160" x2="1160" y2="200" opacity="0.81"></line><line x1="1240" y1="160" x2="1200" y2="200" opacity="0.81"></line><line x1="1280" y1="160" x2="1240" y2="200" opacity="0.81"></line><line x1="1280" y1="160" x2="1320" y2="200" opacity="0.81"></line><line x1="1320" y1="160" x2="1360" y2="200" opacity="0.81"></line><line x1="1360" y1="160" x2="1400" y2="200" opacity="0.81"></line><line x1="1440" y1="160" x2="1400" y2="200" opacity="0.81"></line><line x1="40" y1="200" x2="0" y2="240" opacity="0.76"></line><line x1="80" y1="200" x2="40" y2="240" opacity="0.76"></line><line x1="120" y1="200" x2="80" y2="240" opacity="0.76"></line><line x1="120" y1="200" x2="160" y2="240" opacity="0.76"></line><line x1="200" y1="200" x2="160" y2="240" opacity="0.76"></line><line x1="200" y1="200" x2="240" y2="240" opacity="0.76"></line><line x1="280" y1="200" x2="240" y2="240" opacity="0.76"></line><line x1="320" y1="200" x2="280" y2="240" opacity="0.76"></line><line x1="360" y1="200" x2="320" y2="240" opacity="0.76"></line><line x1="400" y1="200" x2="360" y2="240" opacity="0.76"></line><line x1="400" y1="200" x2="440" y2="240" opacity="0.76"></line><line x1="440" y1="200" x2="480" y2="240" opacity="0.76"></line><line x1="520" y1="200" x2="480" y2="240" opacity="0.76"></line><line x1="520" y1="200" x2="560" y2="240" opacity="0.76"></line><line x1="560" y1="200" x2="600" y2="240" opacity="0.76"></line><line x1="600" y1="200" x2="640" y2="240" opacity="0.76"></line><line x1="640" y1="200" x2="680" y2="240" opacity="0.76"></line><line x1="680" y1="200" x2="720" y2="240" opacity="0.76"></line><line x1="760" y1="200" x2="720" y2="240" opacity="0.76"></line><line x1="800" y1="200" x2="760" y2="240" opacity="0.76"></line><line x1="800" y1="200" x2="840" y2="240" opacity="0.76"></line><line x1="840" y1="200" x2="880" y2="240" opacity="0.76"></line><line x1="880" y1="200" x2="920" y2="240" opacity="0.76"></line><line x1="920" y1="200" x2="960" y2="240" opacity="0.76"></line><line x1="960" y1="200" x2="1000" y2="240" opacity="0.76"></line><line x1="1000" y1="200" x2="1040" y2="240" opacity="0.76"></line><line x1="1040" y1="200" x2="1080" y2="240" opacity="0.76"></line><line x1="1120" y1="200" x2="1080" y2="240" opacity="0.76"></line><line x1="1120" y1="200" x2="1160" y2="240" opacity="0.76"></line><line x1="1200" y1="200" x2="1160" y2="240" opacity="0.76"></line><line x1="1200" y1="200" x2="1240" y2="240" opacity="0.76"></line><line x1="1240" y1="200" x2="1280" y2="240" opacity="0.76"></line><line x1="1320" y1="200" x2="1280" y2="240" opacity="0.76"></line><line x1="1320" y1="200" x2="1360" y2="240" opacity="0.76"></line><line x1="1360" y1="200" x2="1400" y2="240" opacity="0.76"></line><line x1="1440" y1="200" x2="1400" y2="240" opacity="0.76"></line><line x1="40" y1="240" x2="0" y2="280" opacity="0.72"></line><line x1="80" y1="240" x2="40" y2="280" opacity="0.72"></line><line x1="80" y1="240" x2="120" y2="280" opacity="0.72"></line><line x1="160" y1="240" x2="120" y2="280" opacity="0.72"></line><line x1="160" y1="240" x2="200" y2="280" opacity="0.72"></line><line x1="240" y1="240" x2="200" y2="280" opacity="0.72"></line><line x1="280" y1="240" x2="240" y2="280" opacity="0.72"></line><line x1="320" y1="240" x2="280" y2="280" opacity="0.72"></line><line x1="360" y1="240" x2="320" y2="280" opacity="0.72"></line><line x1="400" y1="240" x2="360" y2="280" opacity="0.72"></line><line x1="440" y1="240" x2="400" y2="280" opacity="0.72"></line><line x1="440" y1="240" x2="480" y2="280" opacity="0.72"></line><line x1="480" y1="240" x2="520" y2="280" opacity="0.72"></line><line x1="560" y1="240" x2="520" y2="280" opacity="0.72"></line><line x1="560" y1="240" x2="600" y2="280" opacity="0.72"></line><line x1="640" y1="240" x2="600" y2="280" opacity="0.72"></line><line x1="680" y1="240" x2="640" y2="280" opacity="0.72"></line><line x1="680" y1="240" x2="720" y2="280" opacity="0.72"></line><line x1="760" y1="240" x2="720" y2="280" opacity="0.72"></line><line x1="800" y1="240" x2="760" y2="280" opacity="0.72"></line><line x1="800" y1="240" x2="840" y2="280" opacity="0.72"></line><line x1="880" y1="240" x2="840" y2="280" opacity="0.72"></line><line x1="920" y1="240" x2="880" y2="280" opacity="0.72"></line><line x1="960" y1="240" x2="920" y2="280" opacity="0.72"></line><line x1="1000" y1="240" x2="960" y2="280" opacity="0.72"></line><line x1="1040" y1="240" x2="1000" y2="280" opacity="0.72"></line><line x1="1080" y1="240" x2="1040" y2="280" opacity="0.72"></line><line x1="1120" y1="240" x2="1080" y2="280" opacity="0.72"></line><line x1="1120" y1="240" x2="1160" y2="280" opacity="0.72"></line><line x1="1160" y1="240" x2="1200" y2="280" opacity="0.72"></line><line x1="1200" y1="240" x2="1240" y2="280" opacity="0.72"></line><line x1="1280" y1="240" x2="1240" y2="280" opacity="0.72"></line><line x1="1320" y1="240" x2="1280" y2="280" opacity="0.72"></line><line x1="1360" y1="240" x2="1320" y2="280" opacity="0.72"></line><line x1="1400" y1="240" x2="1360" y2="280" opacity="0.72"></line><line x1="1400" y1="240" x2="1440" y2="280" opacity="0.72"></line><line x1="40" y1="280" x2="0" y2="320" opacity="0.67"></line><line x1="80" y1="280" x2="40" y2="320" opacity="0.67"></line><line x1="120" y1="280" x2="80" y2="320" opacity="0.67"></line><line x1="120" y1="280" x2="160" y2="320" opacity="0.67"></line><line x1="160" y1="280" x2="200" y2="320" opacity="0.67"></line><line x1="200" y1="280" x2="240" y2="320" opacity="0.67"></line><line x1="280" y1="280" x2="240" y2="320" opacity="0.67"></line><line x1="280" y1="280" x2="320" y2="320" opacity="0.67"></line><line x1="320" y1="280" x2="360" y2="320" opacity="0.67"></line><line x1="360" y1="280" x2="400" y2="320" opacity="0.67"></line><line x1="400" y1="280" x2="440" y2="320" opacity="0.67"></line><line x1="440" y1="280" x2="480" y2="320" opacity="0.67"></line><line x1="520" y1="280" x2="480" y2="320" opacity="0.67"></line><line x1="520" y1="280" x2="560" y2="320" opacity="0.67"></line><line x1="600" y1="280" x2="560" y2="320" opacity="0.67"></line><line x1="640" y1="280" x2="600" y2="320" opacity="0.67"></line><line x1="640" y1="280" x2="680" y2="320" opacity="0.67"></line><line x1="720" y1="280" x2="680" y2="320" opacity="0.67"></line><line x1="760" y1="280" x2="720" y2="320" opacity="0.67"></line><line x1="800" y1="280" x2="760" y2="320" opacity="0.67"></line><line x1="800" y1="280" x2="840" y2="320" opacity="0.67"></line><line x1="840" y1="280" x2="880" y2="320" opacity="0.67"></line><line x1="920" y1="280" x2="880" y2="320" opacity="0.67"></line><line x1="920" y1="280" x2="960" y2="320" opacity="0.67"></line><line x1="1000" y1="280" x2="960" y2="320" opacity="0.67"></line><line x1="1040" y1="280" x2="1000" y2="320" opacity="0.67"></line><line x1="1040" y1="280" x2="1080" y2="320" opacity="0.67"></line><line x1="1080" y1="280" x2="1120" y2="320" opacity="0.67"></line><line x1="1160" y1="280" x2="1120" y2="320" opacity="0.67"></line><line x1="1200" y1="280" x2="1160" y2="320" opacity="0.67"></line><line x1="1240" y1="280" x2="1200" y2="320" opacity="0.67"></line><line x1="1280" y1="280" x2="1240" y2="320" opacity="0.67"></line><line x1="1320" y1="280" x2="1280" y2="320" opacity="0.67"></line><line x1="1320" y1="280" x2="1360" y2="320" opacity="0.67"></line><line x1="1360" y1="280" x2="1400" y2="320" opacity="0.67"></line><line x1="1440" y1="280" x2="1400" y2="320" opacity="0.67"></line><line x1="40" y1="320" x2="0" y2="360" opacity="0.62"></line><line x1="80" y1="320" x2="40" y2="360" opacity="0.62"></line><line x1="80" y1="320" x2="120" y2="360" opacity="0.62"></line><line x1="120" y1="320" x2="160" y2="360" opacity="0.62"></line><line x1="200" y1="320" x2="160" y2="360" opacity="0.62"></line><line x1="200" y1="320" x2="240" y2="360" opacity="0.62"></line><line x1="280" y1="320" x2="240" y2="360" opacity="0.62"></line><line x1="280" y1="320" x2="320" y2="360" opacity="0.62"></line><line x1="360" y1="320" x2="320" y2="360" opacity="0.62"></line><line x1="360" y1="320" x2="400" y2="360" opacity="0.62"></line><line x1="400" y1="320" x2="440" y2="360" opacity="0.62"></line><line x1="480" y1="320" x2="440" y2="360" opacity="0.62"></line><line x1="520" y1="320" x2="480" y2="360" opacity="0.62"></line><line x1="560" y1="320" x2="520" y2="360" opacity="0.62"></line><line x1="560" y1="320" x2="600" y2="360" opacity="0.62"></line><line x1="640" y1="320" x2="600" y2="360" opacity="0.62"></line><line x1="640" y1="320" x2="680" y2="360" opacity="0.62"></line><line x1="720" y1="320" x2="680" y2="360" opacity="0.62"></line><line x1="760" y1="320" x2="720" y2="360" opacity="0.62"></line><line x1="800" y1="320" x2="760" y2="360" opacity="0.62"></line><line x1="800" y1="320" x2="840" y2="360" opacity="0.62"></line><line x1="880" y1="320" x2="840" y2="360" opacity="0.62"></line><line x1="920" y1="320" x2="880" y2="360" opacity="0.62"></line><line x1="960" y1="320" x2="920" y2="360" opacity="0.62"></line><line x1="960" y1="320" x2="1000" y2="360" opacity="0.62"></line><line x1="1040" y1="320" x2="1000" y2="360" opacity="0.62"></line><line x1="1080" y1="320" x2="1040" y2="360" opacity="0.62"></line><line x1="1080" y1="320" x2="1120" y2="360" opacity="0.62"></line><line x1="1120" y1="320" x2="1160" y2="360" opacity="0.62"></line><line x1="1160" y1="320" x2="1200" y2="360" opacity="0.62"></line><line x1="1240" y1="320" x2="1200" y2="360" opacity="0.62"></line><line x1="1280" y1="320" x2="1240" y2="360" opacity="0.62"></line><line x1="1320" y1="320" x2="1280" y2="360" opacity="0.62"></line><line x1="1320" y1="320" x2="1360" y2="360" opacity="0.62"></line><line x1="1360" y1="320" x2="1400" y2="360" opacity="0.62"></line><line x1="1440" y1="320" x2="1400" y2="360" opacity="0.62"></line><line x1="40" y1="360" x2="0" y2="400" opacity="0.57"></line><line x1="80" y1="360" x2="40" y2="400" opacity="0.57"></line><line x1="120" y1="360" x2="80" y2="400" opacity="0.57"></line><line x1="160" y1="360" x2="120" y2="400" opacity="0.57"></line><line x1="200" y1="360" x2="160" y2="400" opacity="0.57"></line><line x1="240" y1="360" x2="200" y2="400" opacity="0.57"></line><line x1="280" y1="360" x2="240" y2="400" opacity="0.57"></line><line x1="320" y1="360" x2="280" y2="400" opacity="0.57"></line><line x1="320" y1="360" x2="360" y2="400" opacity="0.57"></line><line x1="400" y1="360" x2="360" y2="400" opacity="0.57"></line><line x1="400" y1="360" x2="440" y2="400" opacity="0.57"></line><line x1="480" y1="360" x2="440" y2="400" opacity="0.57"></line><line x1="480" y1="360" x2="520" y2="400" opacity="0.57"></line><line x1="520" y1="360" x2="560" y2="400" opacity="0.57"></line><line x1="600" y1="360" x2="560" y2="400" opacity="0.57"></line><line x1="600" y1="360" x2="640" y2="400" opacity="0.57"></line><line x1="680" y1="360" x2="640" y2="400" opacity="0.57"></line><line x1="720" y1="360" x2="680" y2="400" opacity="0.57"></line><line x1="760" y1="360" x2="720" y2="400" opacity="0.57"></line><line x1="760" y1="360" x2="800" y2="400" opacity="0.57"></line><line x1="840" y1="360" x2="800" y2="400" opacity="0.57"></line><line x1="840" y1="360" x2="880" y2="400" opacity="0.57"></line><line x1="920" y1="360" x2="880" y2="400" opacity="0.57"></line><line x1="960" y1="360" x2="920" y2="400" opacity="0.57"></line><line x1="960" y1="360" x2="1000" y2="400" opacity="0.57"></line><line x1="1040" y1="360" x2="1000" y2="400" opacity="0.57"></line><line x1="1080" y1="360" x2="1040" y2="400" opacity="0.57"></line><line x1="1080" y1="360" x2="1120" y2="400" opacity="0.57"></line><line x1="1160" y1="360" x2="1120" y2="400" opacity="0.57"></line><line x1="1160" y1="360" x2="1200" y2="400" opacity="0.57"></line><line x1="1240" y1="360" x2="1200" y2="400" opacity="0.57"></line><line x1="1280" y1="360" x2="1240" y2="400" opacity="0.57"></line><line x1="1280" y1="360" x2="1320" y2="400" opacity="0.57"></line><line x1="1320" y1="360" x2="1360" y2="400" opacity="0.57"></line><line x1="1360" y1="360" x2="1400" y2="400" opacity="0.57"></line><line x1="1440" y1="360" x2="1400" y2="400" opacity="0.57"></line><line x1="40" y1="400" x2="0" y2="440" opacity="0.53"></line><line x1="80" y1="400" x2="40" y2="440" opacity="0.53"></line><line x1="80" y1="400" x2="120" y2="440" opacity="0.53"></line><line x1="120" y1="400" x2="160" y2="440" opacity="0.53"></line><line x1="200" y1="400" x2="160" y2="440" opacity="0.53"></line><line x1="200" y1="400" x2="240" y2="440" opacity="0.53"></line><line x1="280" y1="400" x2="240" y2="440" opacity="0.53"></line><line x1="280" y1="400" x2="320" y2="440" opacity="0.53"></line><line x1="360" y1="400" x2="320" y2="440" opacity="0.53"></line><line x1="360" y1="400" x2="400" y2="440" opacity="0.53"></line><line x1="400" y1="400" x2="440" y2="440" opacity="0.53"></line><line x1="480" y1="400" x2="440" y2="440" opacity="0.53"></line><line x1="520" y1="400" x2="480" y2="440" opacity="0.53"></line><line x1="520" y1="400" x2="560" y2="440" opacity="0.53"></line><line x1="600" y1="400" x2="560" y2="440" opacity="0.53"></line><line x1="640" y1="400" x2="600" y2="440" opacity="0.53"></line><line x1="640" y1="400" x2="680" y2="440" opacity="0.53"></line><line x1="680" y1="400" x2="720" y2="440" opacity="0.53"></line><line x1="720" y1="400" x2="760" y2="440" opacity="0.53"></line><line x1="800" y1="400" x2="760" y2="440" opacity="0.53"></line><line x1="840" y1="400" x2="800" y2="440" opacity="0.53"></line><line x1="840" y1="400" x2="880" y2="440" opacity="0.53"></line><line x1="920" y1="400" x2="880" y2="440" opacity="0.53"></line><line x1="960" y1="400" x2="920" y2="440" opacity="0.53"></line><line x1="1000" y1="400" x2="960" y2="440" opacity="0.53"></line><line x1="1000" y1="400" x2="1040" y2="440" opacity="0.53"></line><line x1="1080" y1="400" x2="1040" y2="440" opacity="0.53"></line><line x1="1120" y1="400" x2="1080" y2="440" opacity="0.53"></line><line x1="1160" y1="400" x2="1120" y2="440" opacity="0.53"></line><line x1="1200" y1="400" x2="1160" y2="440" opacity="0.53"></line><line x1="1200" y1="400" x2="1240" y2="440" opacity="0.53"></line><line x1="1280" y1="400" x2="1240" y2="440" opacity="0.53"></line><line x1="1280" y1="400" x2="1320" y2="440" opacity="0.53"></line><line x1="1360" y1="400" x2="1320" y2="440" opacity="0.53"></line><line x1="1360" y1="400" x2="1400" y2="440" opacity="0.53"></line><line x1="1400" y1="400" x2="1440" y2="440" opacity="0.53"></line><line x1="40" y1="440" x2="0" y2="480" opacity="0.48"></line><line x1="80" y1="440" x2="40" y2="480" opacity="0.48"></line><line x1="120" y1="440" x2="80" y2="480" opacity="0.48"></line><line x1="160" y1="440" x2="120" y2="480" opacity="0.48"></line><line x1="160" y1="440" x2="200" y2="480" opacity="0.48"></line><line x1="240" y1="440" x2="200" y2="480" opacity="0.48"></line><line x1="240" y1="440" x2="280" y2="480" opacity="0.48"></line><line x1="320" y1="440" x2="280" y2="480" opacity="0.48"></line><line x1="320" y1="440" x2="360" y2="480" opacity="0.48"></line><line x1="400" y1="440" x2="360" y2="480" opacity="0.48"></line><line x1="400" y1="440" x2="440" y2="480" opacity="0.48"></line><line x1="480" y1="440" x2="440" y2="480" opacity="0.48"></line><line x1="520" y1="440" x2="480" y2="480" opacity="0.48"></line><line x1="520" y1="440" x2="560" y2="480" opacity="0.48"></line><line x1="600" y1="440" x2="560" y2="480" opacity="0.48"></line><line x1="600" y1="440" x2="640" y2="480" opacity="0.48"></line><line x1="680" y1="440" x2="640" y2="480" opacity="0.48"></line><line x1="680" y1="440" x2="720" y2="480" opacity="0.48"></line><line x1="720" y1="440" x2="760" y2="480" opacity="0.48"></line><line x1="800" y1="440" x2="760" y2="480" opacity="0.48"></line><line x1="840" y1="440" x2="800" y2="480" opacity="0.48"></line><line x1="880" y1="440" x2="840" y2="480" opacity="0.48"></line><line x1="920" y1="440" x2="880" y2="480" opacity="0.48"></line><line x1="960" y1="440" x2="920" y2="480" opacity="0.48"></line><line x1="1000" y1="440" x2="960" y2="480" opacity="0.48"></line><line x1="1040" y1="440" x2="1000" y2="480" opacity="0.48"></line><line x1="1040" y1="440" x2="1080" y2="480" opacity="0.48"></line><line x1="1080" y1="440" x2="1120" y2="480" opacity="0.48"></line><line x1="1160" y1="440" x2="1120" y2="480" opacity="0.48"></line><line x1="1160" y1="440" x2="1200" y2="480" opacity="0.48"></line><line x1="1200" y1="440" x2="1240" y2="480" opacity="0.48"></line><line x1="1280" y1="440" x2="1240" y2="480" opacity="0.48"></line><line x1="1320" y1="440" x2="1280" y2="480" opacity="0.48"></line><line x1="1360" y1="440" x2="1320" y2="480" opacity="0.48"></line><line x1="1360" y1="440" x2="1400" y2="480" opacity="0.48"></line><line x1="1400" y1="440" x2="1440" y2="480" opacity="0.48"></line><line x1="0" y1="480" x2="40" y2="520" opacity="0.43"></line><line x1="80" y1="480" x2="40" y2="520" opacity="0.43"></line><line x1="120" y1="480" x2="80" y2="520" opacity="0.43"></line><line x1="120" y1="480" x2="160" y2="520" opacity="0.43"></line><line x1="160" y1="480" x2="200" y2="520" opacity="0.43"></line><line x1="240" y1="480" x2="200" y2="520" opacity="0.43"></line><line x1="240" y1="480" x2="280" y2="520" opacity="0.43"></line><line x1="280" y1="480" x2="320" y2="520" opacity="0.43"></line><line x1="360" y1="480" x2="320" y2="520" opacity="0.43"></line><line x1="400" y1="480" x2="360" y2="520" opacity="0.43"></line><line x1="400" y1="480" x2="440" y2="520" opacity="0.43"></line><line x1="480" y1="480" x2="440" y2="520" opacity="0.43"></line><line x1="520" y1="480" x2="480" y2="520" opacity="0.43"></line><line x1="520" y1="480" x2="560" y2="520" opacity="0.43"></line><line x1="560" y1="480" x2="600" y2="520" opacity="0.43"></line><line x1="600" y1="480" x2="640" y2="520" opacity="0.43"></line><line x1="640" y1="480" x2="680" y2="520" opacity="0.43"></line><line x1="720" y1="480" x2="680" y2="520" opacity="0.43"></line><line x1="720" y1="480" x2="760" y2="520" opacity="0.43"></line><line x1="800" y1="480" x2="760" y2="520" opacity="0.43"></line><line x1="840" y1="480" x2="800" y2="520" opacity="0.43"></line><line x1="840" y1="480" x2="880" y2="520" opacity="0.43"></line><line x1="920" y1="480" x2="880" y2="520" opacity="0.43"></line><line x1="920" y1="480" x2="960" y2="520" opacity="0.43"></line><line x1="1000" y1="480" x2="960" y2="520" opacity="0.43"></line><line x1="1040" y1="480" x2="1000" y2="520" opacity="0.43"></line><line x1="1040" y1="480" x2="1080" y2="520" opacity="0.43"></line><line x1="1120" y1="480" x2="1080" y2="520" opacity="0.43"></line><line x1="1120" y1="480" x2="1160" y2="520" opacity="0.43"></line><line x1="1160" y1="480" x2="1200" y2="520" opacity="0.43"></line><line x1="1240" y1="480" x2="1200" y2="520" opacity="0.43"></line><line x1="1280" y1="480" x2="1240" y2="520" opacity="0.43"></line><line x1="1320" y1="480" x2="1280" y2="520" opacity="0.43"></line><line x1="1360" y1="480" x2="1320" y2="520" opacity="0.43"></line><line x1="1400" y1="480" x2="1360" y2="520" opacity="0.43"></line><line x1="1400" y1="480" x2="1440" y2="520" opacity="0.43"></line><line x1="40" y1="520" x2="0" y2="560" opacity="0.38"></line><line x1="80" y1="520" x2="40" y2="560" opacity="0.38"></line><line x1="120" y1="520" x2="80" y2="560" opacity="0.38"></line><line x1="160" y1="520" x2="120" y2="560" opacity="0.38"></line><line x1="200" y1="520" x2="160" y2="560" opacity="0.38"></line><line x1="200" y1="520" x2="240" y2="560" opacity="0.38"></line><line x1="280" y1="520" x2="240" y2="560" opacity="0.38"></line><line x1="320" y1="520" x2="280" y2="560" opacity="0.38"></line><line x1="360" y1="520" x2="320" y2="560" opacity="0.38"></line><line x1="400" y1="520" x2="360" y2="560" opacity="0.38"></line><line x1="400" y1="520" x2="440" y2="560" opacity="0.38"></line><line x1="480" y1="520" x2="440" y2="560" opacity="0.38"></line><line x1="520" y1="520" x2="480" y2="560" opacity="0.38"></line><line x1="520" y1="520" x2="560" y2="560" opacity="0.38"></line><line x1="560" y1="520" x2="600" y2="560" opacity="0.38"></line><line x1="600" y1="520" x2="640" y2="560" opacity="0.38"></line><line x1="640" y1="520" x2="680" y2="560" opacity="0.38"></line><line x1="680" y1="520" x2="720" y2="560" opacity="0.38"></line><line x1="720" y1="520" x2="760" y2="560" opacity="0.38"></line><line x1="760" y1="520" x2="800" y2="560" opacity="0.38"></line><line x1="800" y1="520" x2="840" y2="560" opacity="0.38"></line><line x1="840" y1="520" x2="880" y2="560" opacity="0.38"></line><line x1="880" y1="520" x2="920" y2="560" opacity="0.38"></line><line x1="920" y1="520" x2="960" y2="560" opacity="0.38"></line><line x1="960" y1="520" x2="1000" y2="560" opacity="0.38"></line><line x1="1040" y1="520" x2="1000" y2="560" opacity="0.38"></line><line x1="1080" y1="520" x2="1040" y2="560" opacity="0.38"></line><line x1="1080" y1="520" x2="1120" y2="560" opacity="0.38"></line><line x1="1160" y1="520" x2="1120" y2="560" opacity="0.38"></line><line x1="1160" y1="520" x2="1200" y2="560" opacity="0.38"></line><line x1="1240" y1="520" x2="1200" y2="560" opacity="0.38"></line><line x1="1280" y1="520" x2="1240" y2="560" opacity="0.38"></line><line x1="1280" y1="520" x2="1320" y2="560" opacity="0.38"></line><line x1="1320" y1="520" x2="1360" y2="560" opacity="0.38"></line><line x1="1400" y1="520" x2="1360" y2="560" opacity="0.38"></line><line x1="1400" y1="520" x2="1440" y2="560" opacity="0.38"></line><line x1="40" y1="560" x2="0" y2="600" opacity="0.34"></line><line x1="80" y1="560" x2="40" y2="600" opacity="0.34"></line><line x1="120" y1="560" x2="80" y2="600" opacity="0.34"></line><line x1="160" y1="560" x2="120" y2="600" opacity="0.34"></line><line x1="200" y1="560" x2="160" y2="600" opacity="0.34"></line><line x1="240" y1="560" x2="200" y2="600" opacity="0.34"></line><line x1="280" y1="560" x2="240" y2="600" opacity="0.34"></line><line x1="320" y1="560" x2="280" y2="600" opacity="0.34"></line><line x1="360" y1="560" x2="320" y2="600" opacity="0.34"></line><line x1="400" y1="560" x2="360" y2="600" opacity="0.34"></line><line x1="440" y1="560" x2="400" y2="600" opacity="0.34"></line><line x1="440" y1="560" x2="480" y2="600" opacity="0.34"></line><line x1="480" y1="560" x2="520" y2="600" opacity="0.34"></line><line x1="520" y1="560" x2="560" y2="600" opacity="0.34"></line><line x1="560" y1="560" x2="600" y2="600" opacity="0.34"></line><line x1="600" y1="560" x2="640" y2="600" opacity="0.34"></line><line x1="640" y1="560" x2="680" y2="600" opacity="0.34"></line><line x1="680" y1="560" x2="720" y2="600" opacity="0.34"></line><line x1="760" y1="560" x2="720" y2="600" opacity="0.34"></line><line x1="800" y1="560" x2="760" y2="600" opacity="0.34"></line><line x1="840" y1="560" x2="800" y2="600" opacity="0.34"></line><line x1="840" y1="560" x2="880" y2="600" opacity="0.34"></line><line x1="920" y1="560" x2="880" y2="600" opacity="0.34"></line><line x1="920" y1="560" x2="960" y2="600" opacity="0.34"></line><line x1="960" y1="560" x2="1000" y2="600" opacity="0.34"></line><line x1="1000" y1="560" x2="1040" y2="600" opacity="0.34"></line><line x1="1080" y1="560" x2="1040" y2="600" opacity="0.34"></line><line x1="1120" y1="560" x2="1080" y2="600" opacity="0.34"></line><line x1="1120" y1="560" x2="1160" y2="600" opacity="0.34"></line><line x1="1200" y1="560" x2="1160" y2="600" opacity="0.34"></line><line x1="1200" y1="560" x2="1240" y2="600" opacity="0.34"></line><line x1="1280" y1="560" x2="1240" y2="600" opacity="0.34"></line><line x1="1280" y1="560" x2="1320" y2="600" opacity="0.34"></line><line x1="1360" y1="560" x2="1320" y2="600" opacity="0.34"></line><line x1="1360" y1="560" x2="1400" y2="600" opacity="0.34"></line><line x1="1440" y1="560" x2="1400" y2="600" opacity="0.34"></line><line x1="0" y1="600" x2="40" y2="640" opacity="0.29"></line><line x1="80" y1="600" x2="40" y2="640" opacity="0.29"></line><line x1="120" y1="600" x2="80" y2="640" opacity="0.29"></line><line x1="160" y1="600" x2="120" y2="640" opacity="0.29"></line><line x1="200" y1="600" x2="160" y2="640" opacity="0.29"></line><line x1="200" y1="600" x2="240" y2="640" opacity="0.29"></line><line x1="280" y1="600" x2="240" y2="640" opacity="0.29"></line><line x1="320" y1="600" x2="280" y2="640" opacity="0.29"></line><line x1="360" y1="600" x2="320" y2="640" opacity="0.29"></line><line x1="400" y1="600" x2="360" y2="640" opacity="0.29"></line><line x1="400" y1="600" x2="440" y2="640" opacity="0.29"></line><line x1="480" y1="600" x2="440" y2="640" opacity="0.29"></line><line x1="520" y1="600" x2="480" y2="640" opacity="0.29"></line><line x1="560" y1="600" x2="520" y2="640" opacity="0.29"></line><line x1="600" y1="600" x2="560" y2="640" opacity="0.29"></line><line x1="640" y1="600" x2="600" y2="640" opacity="0.29"></line><line x1="680" y1="600" x2="640" y2="640" opacity="0.29"></line><line x1="720" y1="600" x2="680" y2="640" opacity="0.29"></line><line x1="760" y1="600" x2="720" y2="640" opacity="0.29"></line><line x1="760" y1="600" x2="800" y2="640" opacity="0.29"></line><line x1="800" y1="600" x2="840" y2="640" opacity="0.29"></line><line x1="880" y1="600" x2="840" y2="640" opacity="0.29"></line><line x1="920" y1="600" x2="880" y2="640" opacity="0.29"></line><line x1="960" y1="600" x2="920" y2="640" opacity="0.29"></line><line x1="960" y1="600" x2="1000" y2="640" opacity="0.29"></line><line x1="1000" y1="600" x2="1040" y2="640" opacity="0.29"></line><line x1="1080" y1="600" x2="1040" y2="640" opacity="0.29"></line><line x1="1120" y1="600" x2="1080" y2="640" opacity="0.29"></line><line x1="1160" y1="600" x2="1120" y2="640" opacity="0.29"></line><line x1="1160" y1="600" x2="1200" y2="640" opacity="0.29"></line><line x1="1200" y1="600" x2="1240" y2="640" opacity="0.29"></line><line x1="1240" y1="600" x2="1280" y2="640" opacity="0.29"></line><line x1="1320" y1="600" x2="1280" y2="640" opacity="0.29"></line><line x1="1360" y1="600" x2="1320" y2="640" opacity="0.29"></line><line x1="1360" y1="600" x2="1400" y2="640" opacity="0.29"></line><line x1="1440" y1="600" x2="1400" y2="640" opacity="0.29"></line><line x1="0" y1="640" x2="40" y2="680" opacity="0.24"></line><line x1="80" y1="640" x2="40" y2="680" opacity="0.24"></line><line x1="120" y1="640" x2="80" y2="680" opacity="0.24"></line><line x1="160" y1="640" x2="120" y2="680" opacity="0.24"></line><line x1="160" y1="640" x2="200" y2="680" opacity="0.24"></line><line x1="240" y1="640" x2="200" y2="680" opacity="0.24"></line><line x1="240" y1="640" x2="280" y2="680" opacity="0.24"></line><line x1="320" y1="640" x2="280" y2="680" opacity="0.24"></line><line x1="320" y1="640" x2="360" y2="680" opacity="0.24"></line><line x1="360" y1="640" x2="400" y2="680" opacity="0.24"></line><line x1="440" y1="640" x2="400" y2="680" opacity="0.24"></line><line x1="480" y1="640" x2="440" y2="680" opacity="0.24"></line><line x1="480" y1="640" x2="520" y2="680" opacity="0.24"></line><line x1="560" y1="640" x2="520" y2="680" opacity="0.24"></line><line x1="600" y1="640" x2="560" y2="680" opacity="0.24"></line><line x1="640" y1="640" x2="600" y2="680" opacity="0.24"></line><line x1="680" y1="640" x2="640" y2="680" opacity="0.24"></line><line x1="680" y1="640" x2="720" y2="680" opacity="0.24"></line><line x1="720" y1="640" x2="760" y2="680" opacity="0.24"></line><line x1="800" y1="640" x2="760" y2="680" opacity="0.24"></line><line x1="840" y1="640" x2="800" y2="680" opacity="0.24"></line><line x1="880" y1="640" x2="840" y2="680" opacity="0.24"></line><line x1="920" y1="640" x2="880" y2="680" opacity="0.24"></line><line x1="920" y1="640" x2="960" y2="680" opacity="0.24"></line><line x1="1000" y1="640" x2="960" y2="680" opacity="0.24"></line><line x1="1000" y1="640" x2="1040" y2="680" opacity="0.24"></line><line x1="1080" y1="640" x2="1040" y2="680" opacity="0.24"></line><line x1="1120" y1="640" x2="1080" y2="680" opacity="0.24"></line><line x1="1160" y1="640" x2="1120" y2="680" opacity="0.24"></line><line x1="1200" y1="640" x2="1160" y2="680" opacity="0.24"></line><line x1="1240" y1="640" x2="1200" y2="680" opacity="0.24"></line><line x1="1280" y1="640" x2="1240" y2="680" opacity="0.24"></line><line x1="1280" y1="640" x2="1320" y2="680" opacity="0.24"></line><line x1="1360" y1="640" x2="1320" y2="680" opacity="0.24"></line><line x1="1360" y1="640" x2="1400" y2="680" opacity="0.24"></line><line x1="1440" y1="640" x2="1400" y2="680" opacity="0.24"></line><line x1="0" y1="680" x2="40" y2="720" opacity="0.19"></line><line x1="80" y1="680" x2="40" y2="720" opacity="0.19"></line><line x1="80" y1="680" x2="120" y2="720" opacity="0.19"></line><line x1="160" y1="680" x2="120" y2="720" opacity="0.19"></line><line x1="160" y1="680" x2="200" y2="720" opacity="0.19"></line><line x1="200" y1="680" x2="240" y2="720" opacity="0.19"></line><line x1="280" y1="680" x2="240" y2="720" opacity="0.19"></line><line x1="320" y1="680" x2="280" y2="720" opacity="0.19"></line><line x1="320" y1="680" x2="360" y2="720" opacity="0.19"></line><line x1="360" y1="680" x2="400" y2="720" opacity="0.19"></line><line x1="400" y1="680" x2="440" y2="720" opacity="0.19"></line><line x1="440" y1="680" x2="480" y2="720" opacity="0.19"></line><line x1="520" y1="680" x2="480" y2="720" opacity="0.19"></line><line x1="560" y1="680" x2="520" y2="720" opacity="0.19"></line><line x1="600" y1="680" x2="560" y2="720" opacity="0.19"></line><line x1="640" y1="680" x2="600" y2="720" opacity="0.19"></line><line x1="640" y1="680" x2="680" y2="720" opacity="0.19"></line><line x1="720" y1="680" x2="680" y2="720" opacity="0.19"></line><line x1="760" y1="680" x2="720" y2="720" opacity="0.19"></line><line x1="800" y1="680" x2="760" y2="720" opacity="0.19"></line><line x1="800" y1="680" x2="840" y2="720" opacity="0.19"></line><line x1="880" y1="680" x2="840" y2="720" opacity="0.19"></line><line x1="920" y1="680" x2="880" y2="720" opacity="0.19"></line><line x1="960" y1="680" x2="920" y2="720" opacity="0.19"></line><line x1="1000" y1="680" x2="960" y2="720" opacity="0.19"></line><line x1="1000" y1="680" x2="1040" y2="720" opacity="0.19"></line><line x1="1040" y1="680" x2="1080" y2="720" opacity="0.19"></line><line x1="1080" y1="680" x2="1120" y2="720" opacity="0.19"></line><line x1="1120" y1="680" x2="1160" y2="720" opacity="0.19"></line><line x1="1200" y1="680" x2="1160" y2="720" opacity="0.19"></line><line x1="1240" y1="680" x2="1200" y2="720" opacity="0.19"></line><line x1="1280" y1="680" x2="1240" y2="720" opacity="0.19"></line><line x1="1320" y1="680" x2="1280" y2="720" opacity="0.19"></line><line x1="1320" y1="680" x2="1360" y2="720" opacity="0.19"></line><line x1="1360" y1="680" x2="1400" y2="720" opacity="0.19"></line><line x1="1440" y1="680" x2="1400" y2="720" opacity="0.19"></line><line x1="0" y1="720" x2="40" y2="760" opacity="0.15"></line><line x1="80" y1="720" x2="40" y2="760" opacity="0.15"></line><line x1="80" y1="720" x2="120" y2="760" opacity="0.15"></line><line x1="160" y1="720" x2="120" y2="760" opacity="0.15"></line><line x1="160" y1="720" x2="200" y2="760" opacity="0.15"></line><line x1="240" y1="720" x2="200" y2="760" opacity="0.15"></line><line x1="240" y1="720" x2="280" y2="760" opacity="0.15"></line><line x1="280" y1="720" x2="320" y2="760" opacity="0.15"></line><line x1="320" y1="720" x2="360" y2="760" opacity="0.15"></line><line x1="400" y1="720" x2="360" y2="760" opacity="0.15"></line><line x1="440" y1="720" x2="400" y2="760" opacity="0.15"></line><line x1="440" y1="720" x2="480" y2="760" opacity="0.15"></line><line x1="520" y1="720" x2="480" y2="760" opacity="0.15"></line><line x1="560" y1="720" x2="520" y2="760" opacity="0.15"></line><line x1="600" y1="720" x2="560" y2="760" opacity="0.15"></line><line x1="640" y1="720" x2="600" y2="760" opacity="0.15"></line><line x1="640" y1="720" x2="680" y2="760" opacity="0.15"></line><line x1="720" y1="720" x2="680" y2="760" opacity="0.15"></line><line x1="760" y1="720" x2="720" y2="760" opacity="0.15"></line><line x1="760" y1="720" x2="800" y2="760" opacity="0.15"></line><line x1="800" y1="720" x2="840" y2="760" opacity="0.15"></line><line x1="880" y1="720" x2="840" y2="760" opacity="0.15"></line><line x1="920" y1="720" x2="880" y2="760" opacity="0.15"></line><line x1="920" y1="720" x2="960" y2="760" opacity="0.15"></line><line x1="1000" y1="720" x2="960" y2="760" opacity="0.15"></line><line x1="1040" y1="720" x2="1000" y2="760" opacity="0.15"></line><line x1="1080" y1="720" x2="1040" y2="760" opacity="0.15"></line><line x1="1120" y1="720" x2="1080" y2="760" opacity="0.15"></line><line x1="1160" y1="720" x2="1120" y2="760" opacity="0.15"></line><line x1="1160" y1="720" x2="1200" y2="760" opacity="0.15"></line><line x1="1240" y1="720" x2="1200" y2="760" opacity="0.15"></line><line x1="1280" y1="720" x2="1240" y2="760" opacity="0.15"></line><line x1="1280" y1="720" x2="1320" y2="760" opacity="0.15"></line><line x1="1320" y1="720" x2="1360" y2="760" opacity="0.15"></line><line x1="1360" y1="720" x2="1400" y2="760" opacity="0.15"></line><line x1="1440" y1="720" x2="1400" y2="760" opacity="0.15"></line><line x1="40" y1="760" x2="0" y2="800" opacity="0.10"></line><line x1="80" y1="760" x2="40" y2="800" opacity="0.10"></line><line x1="120" y1="760" x2="80" y2="800" opacity="0.10"></line><line x1="120" y1="760" x2="160" y2="800" opacity="0.10"></line><line x1="160" y1="760" x2="200" y2="800" opacity="0.10"></line><line x1="200" y1="760" x2="240" y2="800" opacity="0.10"></line><line x1="280" y1="760" x2="240" y2="800" opacity="0.10"></line><line x1="280" y1="760" x2="320" y2="800" opacity="0.10"></line><line x1="320" y1="760" x2="360" y2="800" opacity="0.10"></line><line x1="360" y1="760" x2="400" y2="800" opacity="0.10"></line><line x1="400" y1="760" x2="440" y2="800" opacity="0.10"></line><line x1="480" y1="760" x2="440" y2="800" opacity="0.10"></line><line x1="480" y1="760" x2="520" y2="800" opacity="0.10"></line><line x1="520" y1="760" x2="560" y2="800" opacity="0.10"></line><line x1="560" y1="760" x2="600" y2="800" opacity="0.10"></line><line x1="640" y1="760" x2="600" y2="800" opacity="0.10"></line><line x1="640" y1="760" x2="680" y2="800" opacity="0.10"></line><line x1="680" y1="760" x2="720" y2="800" opacity="0.10"></line><line x1="720" y1="760" x2="760" y2="800" opacity="0.10"></line><line x1="760" y1="760" x2="800" y2="800" opacity="0.10"></line><line x1="840" y1="760" x2="800" y2="800" opacity="0.10"></line><line x1="840" y1="760" x2="880" y2="800" opacity="0.10"></line><line x1="920" y1="760" x2="880" y2="800" opacity="0.10"></line><line x1="960" y1="760" x2="920" y2="800" opacity="0.10"></line><line x1="960" y1="760" x2="1000" y2="800" opacity="0.10"></line><line x1="1000" y1="760" x2="1040" y2="800" opacity="0.10"></line><line x1="1040" y1="760" x2="1080" y2="800" opacity="0.10"></line><line x1="1080" y1="760" x2="1120" y2="800" opacity="0.10"></line><line x1="1120" y1="760" x2="1160" y2="800" opacity="0.10"></line><line x1="1160" y1="760" x2="1200" y2="800" opacity="0.10"></line><line x1="1240" y1="760" x2="1200" y2="800" opacity="0.10"></line><line x1="1280" y1="760" x2="1240" y2="800" opacity="0.10"></line><line x1="1320" y1="760" x2="1280" y2="800" opacity="0.10"></line><line x1="1360" y1="760" x2="1320" y2="800" opacity="0.10"></line><line x1="1360" y1="760" x2="1400" y2="800" opacity="0.10"></line><line x1="1440" y1="760" x2="1400" y2="800" opacity="0.10"></line><line x1="0" y1="800" x2="40" y2="840" opacity="0.05"></line><line x1="80" y1="800" x2="40" y2="840" opacity="0.05"></line><line x1="120" y1="800" x2="80" y2="840" opacity="0.05"></line><line x1="160" y1="800" x2="120" y2="840" opacity="0.05"></line><line x1="200" y1="800" x2="160" y2="840" opacity="0.05"></line><line x1="200" y1="800" x2="240" y2="840" opacity="0.05"></line><line x1="280" y1="800" x2="240" y2="840" opacity="0.05"></line><line x1="320" y1="800" x2="280" y2="840" opacity="0.05"></line><line x1="320" y1="800" x2="360" y2="840" opacity="0.05"></line><line x1="400" y1="800" x2="360" y2="840" opacity="0.05"></line><line x1="440" y1="800" x2="400" y2="840" opacity="0.05"></line><line x1="440" y1="800" x2="480" y2="840" opacity="0.05"></line><line x1="480" y1="800" x2="520" y2="840" opacity="0.05"></line><line x1="560" y1="800" x2="520" y2="840" opacity="0.05"></line><line x1="600" y1="800" x2="560" y2="840" opacity="0.05"></line><line x1="600" y1="800" x2="640" y2="840" opacity="0.05"></line><line x1="680" y1="800" x2="640" y2="840" opacity="0.05"></line><line x1="720" y1="800" x2="680" y2="840" opacity="0.05"></line><line x1="760" y1="800" x2="720" y2="840" opacity="0.05"></line><line x1="760" y1="800" x2="800" y2="840" opacity="0.05"></line><line x1="840" y1="800" x2="800" y2="840" opacity="0.05"></line><line x1="880" y1="800" x2="840" y2="840" opacity="0.05"></line><line x1="880" y1="800" x2="920" y2="840" opacity="0.05"></line><line x1="960" y1="800" x2="920" y2="840" opacity="0.05"></line><line x1="1000" y1="800" x2="960" y2="840" opacity="0.05"></line><line x1="1040" y1="800" x2="1000" y2="840" opacity="0.05"></line><line x1="1080" y1="800" x2="1040" y2="840" opacity="0.05"></line><line x1="1120" y1="800" x2="1080" y2="840" opacity="0.05"></line><line x1="1160" y1="800" x2="1120" y2="840" opacity="0.05"></line><line x1="1200" y1="800" x2="1160" y2="840" opacity="0.05"></line><line x1="1200" y1="800" x2="1240" y2="840" opacity="0.05"></line><line x1="1280" y1="800" x2="1240" y2="840" opacity="0.05"></line><line x1="1320" y1="800" x2="1280" y2="840" opacity="0.05"></line><line x1="1360" y1="800" x2="1320" y2="840" opacity="0.05"></line><line x1="1360" y1="800" x2="1400" y2="840" opacity="0.05"></line><line x1="1400" y1="800" x2="1440" y2="840" opacity="0.05"></line></g></svg>
-           
-           
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 1422 800" opacity="0.76"><g stroke-width="2.5" stroke="#14213d" fill="none" stroke-linecap="butt"><line x1="34" y1="0" x2="0" y2="34" opacity="0.05"></line><line x1="68" y1="0" x2="34" y2="34" opacity="0.05"></line><line x1="102" y1="0" x2="68" y2="34" opacity="0.05"></line><line x1="102" y1="0" x2="136" y2="34" opacity="0.05"></line><line x1="170" y1="0" x2="136" y2="34" opacity="0.05"></line><line x1="170" y1="0" x2="204" y2="34" opacity="0.05"></line><line x1="238" y1="0" x2="204" y2="34" opacity="0.05"></line><line x1="272" y1="0" x2="238" y2="34" opacity="0.05"></line><line x1="306" y1="0" x2="272" y2="34" opacity="0.05"></line><line x1="340" y1="0" x2="306" y2="34" opacity="0.05"></line><line x1="374" y1="0" x2="340" y2="34" opacity="0.05"></line><line x1="374" y1="0" x2="408" y2="34" opacity="0.05"></line><line x1="408" y1="0" x2="442" y2="34" opacity="0.05"></line><line x1="476" y1="0" x2="442" y2="34" opacity="0.05"></line><line x1="476" y1="0" x2="510" y2="34" opacity="0.05"></line><line x1="544" y1="0" x2="510" y2="34" opacity="0.05"></line><line x1="544" y1="0" x2="578" y2="34" opacity="0.05"></line><line x1="612" y1="0" x2="578" y2="34" opacity="0.05"></line><line x1="612" y1="0" x2="646" y2="34" opacity="0.05"></line><line x1="680" y1="0" x2="646" y2="34" opacity="0.05"></line><line x1="714" y1="0" x2="680" y2="34" opacity="0.05"></line><line x1="714" y1="0" x2="748" y2="34" opacity="0.05"></line><line x1="782" y1="0" x2="748" y2="34" opacity="0.05"></line><line x1="816" y1="0" x2="782" y2="34" opacity="0.05"></line><line x1="850" y1="0" x2="816" y2="34" opacity="0.05"></line><line x1="850" y1="0" x2="884" y2="34" opacity="0.05"></line><line x1="884" y1="0" x2="918" y2="34" opacity="0.05"></line><line x1="918" y1="0" x2="952" y2="34" opacity="0.05"></line><line x1="986" y1="0" x2="952" y2="34" opacity="0.05"></line><line x1="1020" y1="0" x2="986" y2="34" opacity="0.05"></line><line x1="1020" y1="0" x2="1054" y2="34" opacity="0.05"></line><line x1="1088" y1="0" x2="1054" y2="34" opacity="0.05"></line><line x1="1122" y1="0" x2="1088" y2="34" opacity="0.05"></line><line x1="1122" y1="0" x2="1156" y2="34" opacity="0.05"></line><line x1="1156" y1="0" x2="1190" y2="34" opacity="0.05"></line><line x1="1190" y1="0" x2="1224" y2="34" opacity="0.05"></line><line x1="1258" y1="0" x2="1224" y2="34" opacity="0.05"></line><line x1="1292" y1="0" x2="1258" y2="34" opacity="0.05"></line><line x1="1292" y1="0" x2="1326" y2="34" opacity="0.05"></line><line x1="1360" y1="0" x2="1326" y2="34" opacity="0.05"></line><line x1="1394" y1="0" x2="1360" y2="34" opacity="0.05"></line><line x1="1394" y1="0" x2="1428" y2="34" opacity="0.05"></line><line x1="0" y1="34" x2="34" y2="68" opacity="0.09"></line><line x1="68" y1="34" x2="34" y2="68" opacity="0.09"></line><line x1="102" y1="34" x2="68" y2="68" opacity="0.09"></line><line x1="136" y1="34" x2="102" y2="68" opacity="0.09"></line><line x1="136" y1="34" x2="170" y2="68" opacity="0.09"></line><line x1="204" y1="34" x2="170" y2="68" opacity="0.09"></line><line x1="204" y1="34" x2="238" y2="68" opacity="0.09"></line><line x1="272" y1="34" x2="238" y2="68" opacity="0.09"></line><line x1="306" y1="34" x2="272" y2="68" opacity="0.09"></line><line x1="306" y1="34" x2="340" y2="68" opacity="0.09"></line><line x1="374" y1="34" x2="340" y2="68" opacity="0.09"></line><line x1="408" y1="34" x2="374" y2="68" opacity="0.09"></line><line x1="442" y1="34" x2="408" y2="68" opacity="0.09"></line><line x1="442" y1="34" x2="476" y2="68" opacity="0.09"></line><line x1="510" y1="34" x2="476" y2="68" opacity="0.09"></line><line x1="510" y1="34" x2="544" y2="68" opacity="0.09"></line><line x1="578" y1="34" x2="544" y2="68" opacity="0.09"></line><line x1="578" y1="34" x2="612" y2="68" opacity="0.09"></line><line x1="646" y1="34" x2="612" y2="68" opacity="0.09"></line><line x1="646" y1="34" x2="680" y2="68" opacity="0.09"></line><line x1="680" y1="34" x2="714" y2="68" opacity="0.09"></line><line x1="748" y1="34" x2="714" y2="68" opacity="0.09"></line><line x1="782" y1="34" x2="748" y2="68" opacity="0.09"></line><line x1="782" y1="34" x2="816" y2="68" opacity="0.09"></line><line x1="850" y1="34" x2="816" y2="68" opacity="0.09"></line><line x1="884" y1="34" x2="850" y2="68" opacity="0.09"></line><line x1="884" y1="34" x2="918" y2="68" opacity="0.09"></line><line x1="952" y1="34" x2="918" y2="68" opacity="0.09"></line><line x1="986" y1="34" x2="952" y2="68" opacity="0.09"></line><line x1="1020" y1="34" x2="986" y2="68" opacity="0.09"></line><line x1="1020" y1="34" x2="1054" y2="68" opacity="0.09"></line><line x1="1088" y1="34" x2="1054" y2="68" opacity="0.09"></line><line x1="1088" y1="34" x2="1122" y2="68" opacity="0.09"></line><line x1="1156" y1="34" x2="1122" y2="68" opacity="0.09"></line><line x1="1190" y1="34" x2="1156" y2="68" opacity="0.09"></line><line x1="1224" y1="34" x2="1190" y2="68" opacity="0.09"></line><line x1="1258" y1="34" x2="1224" y2="68" opacity="0.09"></line><line x1="1292" y1="34" x2="1258" y2="68" opacity="0.09"></line><line x1="1292" y1="34" x2="1326" y2="68" opacity="0.09"></line><line x1="1360" y1="34" x2="1326" y2="68" opacity="0.09"></line><line x1="1394" y1="34" x2="1360" y2="68" opacity="0.09"></line><line x1="1394" y1="34" x2="1428" y2="68" opacity="0.09"></line><line x1="0" y1="68" x2="34" y2="102" opacity="0.13"></line><line x1="34" y1="68" x2="68" y2="102" opacity="0.13"></line><line x1="102" y1="68" x2="68" y2="102" opacity="0.13"></line><line x1="136" y1="68" x2="102" y2="102" opacity="0.13"></line><line x1="170" y1="68" x2="136" y2="102" opacity="0.13"></line><line x1="204" y1="68" x2="170" y2="102" opacity="0.13"></line><line x1="238" y1="68" x2="204" y2="102" opacity="0.13"></line><line x1="238" y1="68" x2="272" y2="102" opacity="0.13"></line><line x1="272" y1="68" x2="306" y2="102" opacity="0.13"></line><line x1="306" y1="68" x2="340" y2="102" opacity="0.13"></line><line x1="374" y1="68" x2="340" y2="102" opacity="0.13"></line><line x1="374" y1="68" x2="408" y2="102" opacity="0.13"></line><line x1="442" y1="68" x2="408" y2="102" opacity="0.13"></line><line x1="476" y1="68" x2="442" y2="102" opacity="0.13"></line><line x1="510" y1="68" x2="476" y2="102" opacity="0.13"></line><line x1="544" y1="68" x2="510" y2="102" opacity="0.13"></line><line x1="578" y1="68" x2="544" y2="102" opacity="0.13"></line><line x1="612" y1="68" x2="578" y2="102" opacity="0.13"></line><line x1="646" y1="68" x2="612" y2="102" opacity="0.13"></line><line x1="646" y1="68" x2="680" y2="102" opacity="0.13"></line><line x1="714" y1="68" x2="680" y2="102" opacity="0.13"></line><line x1="714" y1="68" x2="748" y2="102" opacity="0.13"></line><line x1="782" y1="68" x2="748" y2="102" opacity="0.13"></line><line x1="816" y1="68" x2="782" y2="102" opacity="0.13"></line><line x1="850" y1="68" x2="816" y2="102" opacity="0.13"></line><line x1="850" y1="68" x2="884" y2="102" opacity="0.13"></line><line x1="884" y1="68" x2="918" y2="102" opacity="0.13"></line><line x1="952" y1="68" x2="918" y2="102" opacity="0.13"></line><line x1="952" y1="68" x2="986" y2="102" opacity="0.13"></line><line x1="1020" y1="68" x2="986" y2="102" opacity="0.13"></line><line x1="1020" y1="68" x2="1054" y2="102" opacity="0.13"></line><line x1="1088" y1="68" x2="1054" y2="102" opacity="0.13"></line><line x1="1088" y1="68" x2="1122" y2="102" opacity="0.13"></line><line x1="1156" y1="68" x2="1122" y2="102" opacity="0.13"></line><line x1="1156" y1="68" x2="1190" y2="102" opacity="0.13"></line><line x1="1190" y1="68" x2="1224" y2="102" opacity="0.13"></line><line x1="1258" y1="68" x2="1224" y2="102" opacity="0.13"></line><line x1="1258" y1="68" x2="1292" y2="102" opacity="0.13"></line><line x1="1326" y1="68" x2="1292" y2="102" opacity="0.13"></line><line x1="1326" y1="68" x2="1360" y2="102" opacity="0.13"></line><line x1="1360" y1="68" x2="1394" y2="102" opacity="0.13"></line><line x1="1428" y1="68" x2="1394" y2="102" opacity="0.13"></line><line x1="0" y1="102" x2="34" y2="136" opacity="0.17"></line><line x1="68" y1="102" x2="34" y2="136" opacity="0.17"></line><line x1="102" y1="102" x2="68" y2="136" opacity="0.17"></line><line x1="136" y1="102" x2="102" y2="136" opacity="0.17"></line><line x1="136" y1="102" x2="170" y2="136" opacity="0.17"></line><line x1="170" y1="102" x2="204" y2="136" opacity="0.17"></line><line x1="238" y1="102" x2="204" y2="136" opacity="0.17"></line><line x1="238" y1="102" x2="272" y2="136" opacity="0.17"></line><line x1="272" y1="102" x2="306" y2="136" opacity="0.17"></line><line x1="340" y1="102" x2="306" y2="136" opacity="0.17"></line><line x1="340" y1="102" x2="374" y2="136" opacity="0.17"></line><line x1="408" y1="102" x2="374" y2="136" opacity="0.17"></line><line x1="408" y1="102" x2="442" y2="136" opacity="0.17"></line><line x1="442" y1="102" x2="476" y2="136" opacity="0.17"></line><line x1="510" y1="102" x2="476" y2="136" opacity="0.17"></line><line x1="510" y1="102" x2="544" y2="136" opacity="0.17"></line><line x1="544" y1="102" x2="578" y2="136" opacity="0.17"></line><line x1="612" y1="102" x2="578" y2="136" opacity="0.17"></line><line x1="612" y1="102" x2="646" y2="136" opacity="0.17"></line><line x1="680" y1="102" x2="646" y2="136" opacity="0.17"></line><line x1="714" y1="102" x2="680" y2="136" opacity="0.17"></line><line x1="748" y1="102" x2="714" y2="136" opacity="0.17"></line><line x1="782" y1="102" x2="748" y2="136" opacity="0.17"></line><line x1="782" y1="102" x2="816" y2="136" opacity="0.17"></line><line x1="816" y1="102" x2="850" y2="136" opacity="0.17"></line><line x1="884" y1="102" x2="850" y2="136" opacity="0.17"></line><line x1="918" y1="102" x2="884" y2="136" opacity="0.17"></line><line x1="918" y1="102" x2="952" y2="136" opacity="0.17"></line><line x1="986" y1="102" x2="952" y2="136" opacity="0.17"></line><line x1="1020" y1="102" x2="986" y2="136" opacity="0.17"></line><line x1="1054" y1="102" x2="1020" y2="136" opacity="0.17"></line><line x1="1088" y1="102" x2="1054" y2="136" opacity="0.17"></line><line x1="1122" y1="102" x2="1088" y2="136" opacity="0.17"></line><line x1="1156" y1="102" x2="1122" y2="136" opacity="0.17"></line><line x1="1156" y1="102" x2="1190" y2="136" opacity="0.17"></line><line x1="1224" y1="102" x2="1190" y2="136" opacity="0.17"></line><line x1="1258" y1="102" x2="1224" y2="136" opacity="0.17"></line><line x1="1292" y1="102" x2="1258" y2="136" opacity="0.17"></line><line x1="1326" y1="102" x2="1292" y2="136" opacity="0.17"></line><line x1="1360" y1="102" x2="1326" y2="136" opacity="0.17"></line><line x1="1360" y1="102" x2="1394" y2="136" opacity="0.17"></line><line x1="1428" y1="102" x2="1394" y2="136" opacity="0.17"></line><line x1="0" y1="136" x2="34" y2="170" opacity="0.21"></line><line x1="34" y1="136" x2="68" y2="170" opacity="0.21"></line><line x1="68" y1="136" x2="102" y2="170" opacity="0.21"></line><line x1="102" y1="136" x2="136" y2="170" opacity="0.21"></line><line x1="136" y1="136" x2="170" y2="170" opacity="0.21"></line><line x1="204" y1="136" x2="170" y2="170" opacity="0.21"></line><line x1="238" y1="136" x2="204" y2="170" opacity="0.21"></line><line x1="272" y1="136" x2="238" y2="170" opacity="0.21"></line><line x1="272" y1="136" x2="306" y2="170" opacity="0.21"></line><line x1="340" y1="136" x2="306" y2="170" opacity="0.21"></line><line x1="340" y1="136" x2="374" y2="170" opacity="0.21"></line><line x1="408" y1="136" x2="374" y2="170" opacity="0.21"></line><line x1="442" y1="136" x2="408" y2="170" opacity="0.21"></line><line x1="476" y1="136" x2="442" y2="170" opacity="0.21"></line><line x1="476" y1="136" x2="510" y2="170" opacity="0.21"></line><line x1="510" y1="136" x2="544" y2="170" opacity="0.21"></line><line x1="544" y1="136" x2="578" y2="170" opacity="0.21"></line><line x1="612" y1="136" x2="578" y2="170" opacity="0.21"></line><line x1="646" y1="136" x2="612" y2="170" opacity="0.21"></line><line x1="680" y1="136" x2="646" y2="170" opacity="0.21"></line><line x1="680" y1="136" x2="714" y2="170" opacity="0.21"></line><line x1="748" y1="136" x2="714" y2="170" opacity="0.21"></line><line x1="782" y1="136" x2="748" y2="170" opacity="0.21"></line><line x1="782" y1="136" x2="816" y2="170" opacity="0.21"></line><line x1="850" y1="136" x2="816" y2="170" opacity="0.21"></line><line x1="884" y1="136" x2="850" y2="170" opacity="0.21"></line><line x1="918" y1="136" x2="884" y2="170" opacity="0.21"></line><line x1="952" y1="136" x2="918" y2="170" opacity="0.21"></line><line x1="952" y1="136" x2="986" y2="170" opacity="0.21"></line><line x1="986" y1="136" x2="1020" y2="170" opacity="0.21"></line><line x1="1054" y1="136" x2="1020" y2="170" opacity="0.21"></line><line x1="1088" y1="136" x2="1054" y2="170" opacity="0.21"></line><line x1="1088" y1="136" x2="1122" y2="170" opacity="0.21"></line><line x1="1156" y1="136" x2="1122" y2="170" opacity="0.21"></line><line x1="1156" y1="136" x2="1190" y2="170" opacity="0.21"></line><line x1="1190" y1="136" x2="1224" y2="170" opacity="0.21"></line><line x1="1224" y1="136" x2="1258" y2="170" opacity="0.21"></line><line x1="1258" y1="136" x2="1292" y2="170" opacity="0.21"></line><line x1="1326" y1="136" x2="1292" y2="170" opacity="0.21"></line><line x1="1326" y1="136" x2="1360" y2="170" opacity="0.21"></line><line x1="1360" y1="136" x2="1394" y2="170" opacity="0.21"></line><line x1="1394" y1="136" x2="1428" y2="170" opacity="0.21"></line><line x1="0" y1="170" x2="34" y2="204" opacity="0.25"></line><line x1="34" y1="170" x2="68" y2="204" opacity="0.25"></line><line x1="102" y1="170" x2="68" y2="204" opacity="0.25"></line><line x1="136" y1="170" x2="102" y2="204" opacity="0.25"></line><line x1="170" y1="170" x2="136" y2="204" opacity="0.25"></line><line x1="170" y1="170" x2="204" y2="204" opacity="0.25"></line><line x1="238" y1="170" x2="204" y2="204" opacity="0.25"></line><line x1="238" y1="170" x2="272" y2="204" opacity="0.25"></line><line x1="272" y1="170" x2="306" y2="204" opacity="0.25"></line><line x1="306" y1="170" x2="340" y2="204" opacity="0.25"></line><line x1="340" y1="170" x2="374" y2="204" opacity="0.25"></line><line x1="374" y1="170" x2="408" y2="204" opacity="0.25"></line><line x1="408" y1="170" x2="442" y2="204" opacity="0.25"></line><line x1="476" y1="170" x2="442" y2="204" opacity="0.25"></line><line x1="476" y1="170" x2="510" y2="204" opacity="0.25"></line><line x1="544" y1="170" x2="510" y2="204" opacity="0.25"></line><line x1="578" y1="170" x2="544" y2="204" opacity="0.25"></line><line x1="612" y1="170" x2="578" y2="204" opacity="0.25"></line><line x1="646" y1="170" x2="612" y2="204" opacity="0.25"></line><line x1="646" y1="170" x2="680" y2="204" opacity="0.25"></line><line x1="680" y1="170" x2="714" y2="204" opacity="0.25"></line><line x1="748" y1="170" x2="714" y2="204" opacity="0.25"></line><line x1="748" y1="170" x2="782" y2="204" opacity="0.25"></line><line x1="816" y1="170" x2="782" y2="204" opacity="0.25"></line><line x1="850" y1="170" x2="816" y2="204" opacity="0.25"></line><line x1="850" y1="170" x2="884" y2="204" opacity="0.25"></line><line x1="918" y1="170" x2="884" y2="204" opacity="0.25"></line><line x1="952" y1="170" x2="918" y2="204" opacity="0.25"></line><line x1="952" y1="170" x2="986" y2="204" opacity="0.25"></line><line x1="986" y1="170" x2="1020" y2="204" opacity="0.25"></line><line x1="1054" y1="170" x2="1020" y2="204" opacity="0.25"></line><line x1="1088" y1="170" x2="1054" y2="204" opacity="0.25"></line><line x1="1122" y1="170" x2="1088" y2="204" opacity="0.25"></line><line x1="1156" y1="170" x2="1122" y2="204" opacity="0.25"></line><line x1="1190" y1="170" x2="1156" y2="204" opacity="0.25"></line><line x1="1190" y1="170" x2="1224" y2="204" opacity="0.25"></line><line x1="1224" y1="170" x2="1258" y2="204" opacity="0.25"></line><line x1="1292" y1="170" x2="1258" y2="204" opacity="0.25"></line><line x1="1326" y1="170" x2="1292" y2="204" opacity="0.25"></line><line x1="1326" y1="170" x2="1360" y2="204" opacity="0.25"></line><line x1="1394" y1="170" x2="1360" y2="204" opacity="0.25"></line><line x1="1428" y1="170" x2="1394" y2="204" opacity="0.25"></line><line x1="34" y1="204" x2="0" y2="238" opacity="0.29"></line><line x1="68" y1="204" x2="34" y2="238" opacity="0.29"></line><line x1="68" y1="204" x2="102" y2="238" opacity="0.29"></line><line x1="102" y1="204" x2="136" y2="238" opacity="0.29"></line><line x1="170" y1="204" x2="136" y2="238" opacity="0.29"></line><line x1="204" y1="204" x2="170" y2="238" opacity="0.29"></line><line x1="238" y1="204" x2="204" y2="238" opacity="0.29"></line><line x1="238" y1="204" x2="272" y2="238" opacity="0.29"></line><line x1="306" y1="204" x2="272" y2="238" opacity="0.29"></line><line x1="340" y1="204" x2="306" y2="238" opacity="0.29"></line><line x1="340" y1="204" x2="374" y2="238" opacity="0.29"></line><line x1="374" y1="204" x2="408" y2="238" opacity="0.29"></line><line x1="442" y1="204" x2="408" y2="238" opacity="0.29"></line><line x1="442" y1="204" x2="476" y2="238" opacity="0.29"></line><line x1="476" y1="204" x2="510" y2="238" opacity="0.29"></line><line x1="544" y1="204" x2="510" y2="238" opacity="0.29"></line><line x1="578" y1="204" x2="544" y2="238" opacity="0.29"></line><line x1="578" y1="204" x2="612" y2="238" opacity="0.29"></line><line x1="646" y1="204" x2="612" y2="238" opacity="0.29"></line><line x1="646" y1="204" x2="680" y2="238" opacity="0.29"></line><line x1="680" y1="204" x2="714" y2="238" opacity="0.29"></line><line x1="748" y1="204" x2="714" y2="238" opacity="0.29"></line><line x1="782" y1="204" x2="748" y2="238" opacity="0.29"></line><line x1="816" y1="204" x2="782" y2="238" opacity="0.29"></line><line x1="816" y1="204" x2="850" y2="238" opacity="0.29"></line><line x1="884" y1="204" x2="850" y2="238" opacity="0.29"></line><line x1="884" y1="204" x2="918" y2="238" opacity="0.29"></line><line x1="952" y1="204" x2="918" y2="238" opacity="0.29"></line><line x1="986" y1="204" x2="952" y2="238" opacity="0.29"></line><line x1="986" y1="204" x2="1020" y2="238" opacity="0.29"></line><line x1="1054" y1="204" x2="1020" y2="238" opacity="0.29"></line><line x1="1088" y1="204" x2="1054" y2="238" opacity="0.29"></line><line x1="1088" y1="204" x2="1122" y2="238" opacity="0.29"></line><line x1="1156" y1="204" x2="1122" y2="238" opacity="0.29"></line><line x1="1190" y1="204" x2="1156" y2="238" opacity="0.29"></line><line x1="1190" y1="204" x2="1224" y2="238" opacity="0.29"></line><line x1="1258" y1="204" x2="1224" y2="238" opacity="0.29"></line><line x1="1258" y1="204" x2="1292" y2="238" opacity="0.29"></line><line x1="1292" y1="204" x2="1326" y2="238" opacity="0.29"></line><line x1="1360" y1="204" x2="1326" y2="238" opacity="0.29"></line><line x1="1360" y1="204" x2="1394" y2="238" opacity="0.29"></line><line x1="1428" y1="204" x2="1394" y2="238" opacity="0.29"></line><line x1="34" y1="238" x2="0" y2="272" opacity="0.33"></line><line x1="34" y1="238" x2="68" y2="272" opacity="0.33"></line><line x1="102" y1="238" x2="68" y2="272" opacity="0.33"></line><line x1="136" y1="238" x2="102" y2="272" opacity="0.33"></line><line x1="136" y1="238" x2="170" y2="272" opacity="0.33"></line><line x1="170" y1="238" x2="204" y2="272" opacity="0.33"></line><line x1="238" y1="238" x2="204" y2="272" opacity="0.33"></line><line x1="272" y1="238" x2="238" y2="272" opacity="0.33"></line><line x1="272" y1="238" x2="306" y2="272" opacity="0.33"></line><line x1="340" y1="238" x2="306" y2="272" opacity="0.33"></line><line x1="374" y1="238" x2="340" y2="272" opacity="0.33"></line><line x1="408" y1="238" x2="374" y2="272" opacity="0.33"></line><line x1="408" y1="238" x2="442" y2="272" opacity="0.33"></line><line x1="442" y1="238" x2="476" y2="272" opacity="0.33"></line><line x1="476" y1="238" x2="510" y2="272" opacity="0.33"></line><line x1="544" y1="238" x2="510" y2="272" opacity="0.33"></line><line x1="578" y1="238" x2="544" y2="272" opacity="0.33"></line><line x1="578" y1="238" x2="612" y2="272" opacity="0.33"></line><line x1="612" y1="238" x2="646" y2="272" opacity="0.33"></line><line x1="680" y1="238" x2="646" y2="272" opacity="0.33"></line><line x1="680" y1="238" x2="714" y2="272" opacity="0.33"></line><line x1="748" y1="238" x2="714" y2="272" opacity="0.33"></line><line x1="782" y1="238" x2="748" y2="272" opacity="0.33"></line><line x1="816" y1="238" x2="782" y2="272" opacity="0.33"></line><line x1="850" y1="238" x2="816" y2="272" opacity="0.33"></line><line x1="884" y1="238" x2="850" y2="272" opacity="0.33"></line><line x1="884" y1="238" x2="918" y2="272" opacity="0.33"></line><line x1="952" y1="238" x2="918" y2="272" opacity="0.33"></line><line x1="952" y1="238" x2="986" y2="272" opacity="0.33"></line><line x1="1020" y1="238" x2="986" y2="272" opacity="0.33"></line><line x1="1020" y1="238" x2="1054" y2="272" opacity="0.33"></line><line x1="1054" y1="238" x2="1088" y2="272" opacity="0.33"></line><line x1="1122" y1="238" x2="1088" y2="272" opacity="0.33"></line><line x1="1156" y1="238" x2="1122" y2="272" opacity="0.33"></line><line x1="1156" y1="238" x2="1190" y2="272" opacity="0.33"></line><line x1="1224" y1="238" x2="1190" y2="272" opacity="0.33"></line><line x1="1258" y1="238" x2="1224" y2="272" opacity="0.33"></line><line x1="1258" y1="238" x2="1292" y2="272" opacity="0.33"></line><line x1="1292" y1="238" x2="1326" y2="272" opacity="0.33"></line><line x1="1360" y1="238" x2="1326" y2="272" opacity="0.33"></line><line x1="1360" y1="238" x2="1394" y2="272" opacity="0.33"></line><line x1="1394" y1="238" x2="1428" y2="272" opacity="0.33"></line><line x1="34" y1="272" x2="0" y2="306" opacity="0.37"></line><line x1="68" y1="272" x2="34" y2="306" opacity="0.37"></line><line x1="102" y1="272" x2="68" y2="306" opacity="0.37"></line><line x1="136" y1="272" x2="102" y2="306" opacity="0.37"></line><line x1="136" y1="272" x2="170" y2="306" opacity="0.37"></line><line x1="170" y1="272" x2="204" y2="306" opacity="0.37"></line><line x1="204" y1="272" x2="238" y2="306" opacity="0.37"></line><line x1="272" y1="272" x2="238" y2="306" opacity="0.37"></line><line x1="306" y1="272" x2="272" y2="306" opacity="0.37"></line><line x1="340" y1="272" x2="306" y2="306" opacity="0.37"></line><line x1="340" y1="272" x2="374" y2="306" opacity="0.37"></line><line x1="408" y1="272" x2="374" y2="306" opacity="0.37"></line><line x1="408" y1="272" x2="442" y2="306" opacity="0.37"></line><line x1="442" y1="272" x2="476" y2="306" opacity="0.37"></line><line x1="510" y1="272" x2="476" y2="306" opacity="0.37"></line><line x1="544" y1="272" x2="510" y2="306" opacity="0.37"></line><line x1="544" y1="272" x2="578" y2="306" opacity="0.37"></line><line x1="578" y1="272" x2="612" y2="306" opacity="0.37"></line><line x1="612" y1="272" x2="646" y2="306" opacity="0.37"></line><line x1="680" y1="272" x2="646" y2="306" opacity="0.37"></line><line x1="714" y1="272" x2="680" y2="306" opacity="0.37"></line><line x1="714" y1="272" x2="748" y2="306" opacity="0.37"></line><line x1="748" y1="272" x2="782" y2="306" opacity="0.37"></line><line x1="816" y1="272" x2="782" y2="306" opacity="0.37"></line><line x1="816" y1="272" x2="850" y2="306" opacity="0.37"></line><line x1="884" y1="272" x2="850" y2="306" opacity="0.37"></line><line x1="884" y1="272" x2="918" y2="306" opacity="0.37"></line><line x1="952" y1="272" x2="918" y2="306" opacity="0.37"></line><line x1="952" y1="272" x2="986" y2="306" opacity="0.37"></line><line x1="1020" y1="272" x2="986" y2="306" opacity="0.37"></line><line x1="1054" y1="272" x2="1020" y2="306" opacity="0.37"></line><line x1="1088" y1="272" x2="1054" y2="306" opacity="0.37"></line><line x1="1122" y1="272" x2="1088" y2="306" opacity="0.37"></line><line x1="1122" y1="272" x2="1156" y2="306" opacity="0.37"></line><line x1="1190" y1="272" x2="1156" y2="306" opacity="0.37"></line><line x1="1224" y1="272" x2="1190" y2="306" opacity="0.37"></line><line x1="1258" y1="272" x2="1224" y2="306" opacity="0.37"></line><line x1="1258" y1="272" x2="1292" y2="306" opacity="0.37"></line><line x1="1326" y1="272" x2="1292" y2="306" opacity="0.37"></line><line x1="1360" y1="272" x2="1326" y2="306" opacity="0.37"></line><line x1="1394" y1="272" x2="1360" y2="306" opacity="0.37"></line><line x1="1394" y1="272" x2="1428" y2="306" opacity="0.37"></line><line x1="34" y1="306" x2="0" y2="340" opacity="0.41"></line><line x1="34" y1="306" x2="68" y2="340" opacity="0.41"></line><line x1="68" y1="306" x2="102" y2="340" opacity="0.41"></line><line x1="102" y1="306" x2="136" y2="340" opacity="0.41"></line><line x1="170" y1="306" x2="136" y2="340" opacity="0.41"></line><line x1="170" y1="306" x2="204" y2="340" opacity="0.41"></line><line x1="204" y1="306" x2="238" y2="340" opacity="0.41"></line><line x1="238" y1="306" x2="272" y2="340" opacity="0.41"></line><line x1="272" y1="306" x2="306" y2="340" opacity="0.41"></line><line x1="340" y1="306" x2="306" y2="340" opacity="0.41"></line><line x1="374" y1="306" x2="340" y2="340" opacity="0.41"></line><line x1="374" y1="306" x2="408" y2="340" opacity="0.41"></line><line x1="442" y1="306" x2="408" y2="340" opacity="0.41"></line><line x1="476" y1="306" x2="442" y2="340" opacity="0.41"></line><line x1="510" y1="306" x2="476" y2="340" opacity="0.41"></line><line x1="510" y1="306" x2="544" y2="340" opacity="0.41"></line><line x1="578" y1="306" x2="544" y2="340" opacity="0.41"></line><line x1="578" y1="306" x2="612" y2="340" opacity="0.41"></line><line x1="612" y1="306" x2="646" y2="340" opacity="0.41"></line><line x1="646" y1="306" x2="680" y2="340" opacity="0.41"></line><line x1="714" y1="306" x2="680" y2="340" opacity="0.41"></line><line x1="748" y1="306" x2="714" y2="340" opacity="0.41"></line><line x1="782" y1="306" x2="748" y2="340" opacity="0.41"></line><line x1="816" y1="306" x2="782" y2="340" opacity="0.41"></line><line x1="850" y1="306" x2="816" y2="340" opacity="0.41"></line><line x1="850" y1="306" x2="884" y2="340" opacity="0.41"></line><line x1="918" y1="306" x2="884" y2="340" opacity="0.41"></line><line x1="952" y1="306" x2="918" y2="340" opacity="0.41"></line><line x1="986" y1="306" x2="952" y2="340" opacity="0.41"></line><line x1="986" y1="306" x2="1020" y2="340" opacity="0.41"></line><line x1="1054" y1="306" x2="1020" y2="340" opacity="0.41"></line><line x1="1054" y1="306" x2="1088" y2="340" opacity="0.41"></line><line x1="1088" y1="306" x2="1122" y2="340" opacity="0.41"></line><line x1="1156" y1="306" x2="1122" y2="340" opacity="0.41"></line><line x1="1190" y1="306" x2="1156" y2="340" opacity="0.41"></line><line x1="1224" y1="306" x2="1190" y2="340" opacity="0.41"></line><line x1="1224" y1="306" x2="1258" y2="340" opacity="0.41"></line><line x1="1292" y1="306" x2="1258" y2="340" opacity="0.41"></line><line x1="1326" y1="306" x2="1292" y2="340" opacity="0.41"></line><line x1="1326" y1="306" x2="1360" y2="340" opacity="0.41"></line><line x1="1360" y1="306" x2="1394" y2="340" opacity="0.41"></line><line x1="1394" y1="306" x2="1428" y2="340" opacity="0.41"></line><line x1="0" y1="340" x2="34" y2="374" opacity="0.45"></line><line x1="34" y1="340" x2="68" y2="374" opacity="0.45"></line><line x1="102" y1="340" x2="68" y2="374" opacity="0.45"></line><line x1="136" y1="340" x2="102" y2="374" opacity="0.45"></line><line x1="170" y1="340" x2="136" y2="374" opacity="0.45"></line><line x1="170" y1="340" x2="204" y2="374" opacity="0.45"></line><line x1="204" y1="340" x2="238" y2="374" opacity="0.45"></line><line x1="238" y1="340" x2="272" y2="374" opacity="0.45"></line><line x1="272" y1="340" x2="306" y2="374" opacity="0.45"></line><line x1="340" y1="340" x2="306" y2="374" opacity="0.45"></line><line x1="374" y1="340" x2="340" y2="374" opacity="0.45"></line><line x1="408" y1="340" x2="374" y2="374" opacity="0.45"></line><line x1="442" y1="340" x2="408" y2="374" opacity="0.45"></line><line x1="476" y1="340" x2="442" y2="374" opacity="0.45"></line><line x1="510" y1="340" x2="476" y2="374" opacity="0.45"></line><line x1="510" y1="340" x2="544" y2="374" opacity="0.45"></line><line x1="578" y1="340" x2="544" y2="374" opacity="0.45"></line><line x1="578" y1="340" x2="612" y2="374" opacity="0.45"></line><line x1="612" y1="340" x2="646" y2="374" opacity="0.45"></line><line x1="680" y1="340" x2="646" y2="374" opacity="0.45"></line><line x1="714" y1="340" x2="680" y2="374" opacity="0.45"></line><line x1="748" y1="340" x2="714" y2="374" opacity="0.45"></line><line x1="782" y1="340" x2="748" y2="374" opacity="0.45"></line><line x1="816" y1="340" x2="782" y2="374" opacity="0.45"></line><line x1="850" y1="340" x2="816" y2="374" opacity="0.45"></line><line x1="884" y1="340" x2="850" y2="374" opacity="0.45"></line><line x1="884" y1="340" x2="918" y2="374" opacity="0.45"></line><line x1="952" y1="340" x2="918" y2="374" opacity="0.45"></line><line x1="952" y1="340" x2="986" y2="374" opacity="0.45"></line><line x1="986" y1="340" x2="1020" y2="374" opacity="0.45"></line><line x1="1054" y1="340" x2="1020" y2="374" opacity="0.45"></line><line x1="1088" y1="340" x2="1054" y2="374" opacity="0.45"></line><line x1="1122" y1="340" x2="1088" y2="374" opacity="0.45"></line><line x1="1156" y1="340" x2="1122" y2="374" opacity="0.45"></line><line x1="1156" y1="340" x2="1190" y2="374" opacity="0.45"></line><line x1="1190" y1="340" x2="1224" y2="374" opacity="0.45"></line><line x1="1258" y1="340" x2="1224" y2="374" opacity="0.45"></line><line x1="1292" y1="340" x2="1258" y2="374" opacity="0.45"></line><line x1="1326" y1="340" x2="1292" y2="374" opacity="0.45"></line><line x1="1360" y1="340" x2="1326" y2="374" opacity="0.45"></line><line x1="1360" y1="340" x2="1394" y2="374" opacity="0.45"></line><line x1="1394" y1="340" x2="1428" y2="374" opacity="0.45"></line><line x1="34" y1="374" x2="0" y2="408" opacity="0.49"></line><line x1="68" y1="374" x2="34" y2="408" opacity="0.49"></line><line x1="68" y1="374" x2="102" y2="408" opacity="0.49"></line><line x1="102" y1="374" x2="136" y2="408" opacity="0.49"></line><line x1="170" y1="374" x2="136" y2="408" opacity="0.49"></line><line x1="170" y1="374" x2="204" y2="408" opacity="0.49"></line><line x1="238" y1="374" x2="204" y2="408" opacity="0.49"></line><line x1="272" y1="374" x2="238" y2="408" opacity="0.49"></line><line x1="272" y1="374" x2="306" y2="408" opacity="0.49"></line><line x1="306" y1="374" x2="340" y2="408" opacity="0.49"></line><line x1="340" y1="374" x2="374" y2="408" opacity="0.49"></line><line x1="408" y1="374" x2="374" y2="408" opacity="0.49"></line><line x1="408" y1="374" x2="442" y2="408" opacity="0.49"></line><line x1="476" y1="374" x2="442" y2="408" opacity="0.49"></line><line x1="476" y1="374" x2="510" y2="408" opacity="0.49"></line><line x1="544" y1="374" x2="510" y2="408" opacity="0.49"></line><line x1="578" y1="374" x2="544" y2="408" opacity="0.49"></line><line x1="578" y1="374" x2="612" y2="408" opacity="0.49"></line><line x1="646" y1="374" x2="612" y2="408" opacity="0.49"></line><line x1="680" y1="374" x2="646" y2="408" opacity="0.49"></line><line x1="680" y1="374" x2="714" y2="408" opacity="0.49"></line><line x1="714" y1="374" x2="748" y2="408" opacity="0.49"></line><line x1="782" y1="374" x2="748" y2="408" opacity="0.49"></line><line x1="782" y1="374" x2="816" y2="408" opacity="0.49"></line><line x1="850" y1="374" x2="816" y2="408" opacity="0.49"></line><line x1="850" y1="374" x2="884" y2="408" opacity="0.49"></line><line x1="884" y1="374" x2="918" y2="408" opacity="0.49"></line><line x1="918" y1="374" x2="952" y2="408" opacity="0.49"></line><line x1="986" y1="374" x2="952" y2="408" opacity="0.49"></line><line x1="986" y1="374" x2="1020" y2="408" opacity="0.49"></line><line x1="1054" y1="374" x2="1020" y2="408" opacity="0.49"></line><line x1="1088" y1="374" x2="1054" y2="408" opacity="0.49"></line><line x1="1122" y1="374" x2="1088" y2="408" opacity="0.49"></line><line x1="1122" y1="374" x2="1156" y2="408" opacity="0.49"></line><line x1="1190" y1="374" x2="1156" y2="408" opacity="0.49"></line><line x1="1190" y1="374" x2="1224" y2="408" opacity="0.49"></line><line x1="1258" y1="374" x2="1224" y2="408" opacity="0.49"></line><line x1="1292" y1="374" x2="1258" y2="408" opacity="0.49"></line><line x1="1326" y1="374" x2="1292" y2="408" opacity="0.49"></line><line x1="1326" y1="374" x2="1360" y2="408" opacity="0.49"></line><line x1="1360" y1="374" x2="1394" y2="408" opacity="0.49"></line><line x1="1428" y1="374" x2="1394" y2="408" opacity="0.49"></line><line x1="0" y1="408" x2="34" y2="442" opacity="0.53"></line><line x1="68" y1="408" x2="34" y2="442" opacity="0.53"></line><line x1="102" y1="408" x2="68" y2="442" opacity="0.53"></line><line x1="136" y1="408" x2="102" y2="442" opacity="0.53"></line><line x1="170" y1="408" x2="136" y2="442" opacity="0.53"></line><line x1="204" y1="408" x2="170" y2="442" opacity="0.53"></line><line x1="238" y1="408" x2="204" y2="442" opacity="0.53"></line><line x1="272" y1="408" x2="238" y2="442" opacity="0.53"></line><line x1="306" y1="408" x2="272" y2="442" opacity="0.53"></line><line x1="306" y1="408" x2="340" y2="442" opacity="0.53"></line><line x1="374" y1="408" x2="340" y2="442" opacity="0.53"></line><line x1="374" y1="408" x2="408" y2="442" opacity="0.53"></line><line x1="408" y1="408" x2="442" y2="442" opacity="0.53"></line><line x1="476" y1="408" x2="442" y2="442" opacity="0.53"></line><line x1="476" y1="408" x2="510" y2="442" opacity="0.53"></line><line x1="544" y1="408" x2="510" y2="442" opacity="0.53"></line><line x1="544" y1="408" x2="578" y2="442" opacity="0.53"></line><line x1="578" y1="408" x2="612" y2="442" opacity="0.53"></line><line x1="646" y1="408" x2="612" y2="442" opacity="0.53"></line><line x1="680" y1="408" x2="646" y2="442" opacity="0.53"></line><line x1="680" y1="408" x2="714" y2="442" opacity="0.53"></line><line x1="714" y1="408" x2="748" y2="442" opacity="0.53"></line><line x1="782" y1="408" x2="748" y2="442" opacity="0.53"></line><line x1="816" y1="408" x2="782" y2="442" opacity="0.53"></line><line x1="850" y1="408" x2="816" y2="442" opacity="0.53"></line><line x1="884" y1="408" x2="850" y2="442" opacity="0.53"></line><line x1="884" y1="408" x2="918" y2="442" opacity="0.53"></line><line x1="952" y1="408" x2="918" y2="442" opacity="0.53"></line><line x1="986" y1="408" x2="952" y2="442" opacity="0.53"></line><line x1="1020" y1="408" x2="986" y2="442" opacity="0.53"></line><line x1="1020" y1="408" x2="1054" y2="442" opacity="0.53"></line><line x1="1088" y1="408" x2="1054" y2="442" opacity="0.53"></line><line x1="1122" y1="408" x2="1088" y2="442" opacity="0.53"></line><line x1="1156" y1="408" x2="1122" y2="442" opacity="0.53"></line><line x1="1156" y1="408" x2="1190" y2="442" opacity="0.53"></line><line x1="1190" y1="408" x2="1224" y2="442" opacity="0.53"></line><line x1="1258" y1="408" x2="1224" y2="442" opacity="0.53"></line><line x1="1258" y1="408" x2="1292" y2="442" opacity="0.53"></line><line x1="1326" y1="408" x2="1292" y2="442" opacity="0.53"></line><line x1="1360" y1="408" x2="1326" y2="442" opacity="0.53"></line><line x1="1360" y1="408" x2="1394" y2="442" opacity="0.53"></line><line x1="1394" y1="408" x2="1428" y2="442" opacity="0.53"></line><line x1="34" y1="442" x2="0" y2="476" opacity="0.57"></line><line x1="68" y1="442" x2="34" y2="476" opacity="0.57"></line><line x1="68" y1="442" x2="102" y2="476" opacity="0.57"></line><line x1="102" y1="442" x2="136" y2="476" opacity="0.57"></line><line x1="170" y1="442" x2="136" y2="476" opacity="0.57"></line><line x1="204" y1="442" x2="170" y2="476" opacity="0.57"></line><line x1="204" y1="442" x2="238" y2="476" opacity="0.57"></line><line x1="238" y1="442" x2="272" y2="476" opacity="0.57"></line><line x1="306" y1="442" x2="272" y2="476" opacity="0.57"></line><line x1="306" y1="442" x2="340" y2="476" opacity="0.57"></line><line x1="374" y1="442" x2="340" y2="476" opacity="0.57"></line><line x1="408" y1="442" x2="374" y2="476" opacity="0.57"></line><line x1="442" y1="442" x2="408" y2="476" opacity="0.57"></line><line x1="476" y1="442" x2="442" y2="476" opacity="0.57"></line><line x1="510" y1="442" x2="476" y2="476" opacity="0.57"></line><line x1="544" y1="442" x2="510" y2="476" opacity="0.57"></line><line x1="544" y1="442" x2="578" y2="476" opacity="0.57"></line><line x1="578" y1="442" x2="612" y2="476" opacity="0.57"></line><line x1="612" y1="442" x2="646" y2="476" opacity="0.57"></line><line x1="680" y1="442" x2="646" y2="476" opacity="0.57"></line><line x1="680" y1="442" x2="714" y2="476" opacity="0.57"></line><line x1="748" y1="442" x2="714" y2="476" opacity="0.57"></line><line x1="782" y1="442" x2="748" y2="476" opacity="0.57"></line><line x1="816" y1="442" x2="782" y2="476" opacity="0.57"></line><line x1="850" y1="442" x2="816" y2="476" opacity="0.57"></line><line x1="884" y1="442" x2="850" y2="476" opacity="0.57"></line><line x1="918" y1="442" x2="884" y2="476" opacity="0.57"></line><line x1="918" y1="442" x2="952" y2="476" opacity="0.57"></line><line x1="986" y1="442" x2="952" y2="476" opacity="0.57"></line><line x1="1020" y1="442" x2="986" y2="476" opacity="0.57"></line><line x1="1054" y1="442" x2="1020" y2="476" opacity="0.57"></line><line x1="1088" y1="442" x2="1054" y2="476" opacity="0.57"></line><line x1="1122" y1="442" x2="1088" y2="476" opacity="0.57"></line><line x1="1122" y1="442" x2="1156" y2="476" opacity="0.57"></line><line x1="1190" y1="442" x2="1156" y2="476" opacity="0.57"></line><line x1="1224" y1="442" x2="1190" y2="476" opacity="0.57"></line><line x1="1258" y1="442" x2="1224" y2="476" opacity="0.57"></line><line x1="1258" y1="442" x2="1292" y2="476" opacity="0.57"></line><line x1="1326" y1="442" x2="1292" y2="476" opacity="0.57"></line><line x1="1360" y1="442" x2="1326" y2="476" opacity="0.57"></line><line x1="1360" y1="442" x2="1394" y2="476" opacity="0.57"></line><line x1="1428" y1="442" x2="1394" y2="476" opacity="0.57"></line><line x1="34" y1="476" x2="0" y2="510" opacity="0.62"></line><line x1="68" y1="476" x2="34" y2="510" opacity="0.62"></line><line x1="102" y1="476" x2="68" y2="510" opacity="0.62"></line><line x1="136" y1="476" x2="102" y2="510" opacity="0.62"></line><line x1="136" y1="476" x2="170" y2="510" opacity="0.62"></line><line x1="204" y1="476" x2="170" y2="510" opacity="0.62"></line><line x1="238" y1="476" x2="204" y2="510" opacity="0.62"></line><line x1="272" y1="476" x2="238" y2="510" opacity="0.62"></line><line x1="272" y1="476" x2="306" y2="510" opacity="0.62"></line><line x1="306" y1="476" x2="340" y2="510" opacity="0.62"></line><line x1="340" y1="476" x2="374" y2="510" opacity="0.62"></line><line x1="374" y1="476" x2="408" y2="510" opacity="0.62"></line><line x1="442" y1="476" x2="408" y2="510" opacity="0.62"></line><line x1="476" y1="476" x2="442" y2="510" opacity="0.62"></line><line x1="476" y1="476" x2="510" y2="510" opacity="0.62"></line><line x1="510" y1="476" x2="544" y2="510" opacity="0.62"></line><line x1="578" y1="476" x2="544" y2="510" opacity="0.62"></line><line x1="578" y1="476" x2="612" y2="510" opacity="0.62"></line><line x1="612" y1="476" x2="646" y2="510" opacity="0.62"></line><line x1="680" y1="476" x2="646" y2="510" opacity="0.62"></line><line x1="714" y1="476" x2="680" y2="510" opacity="0.62"></line><line x1="714" y1="476" x2="748" y2="510" opacity="0.62"></line><line x1="748" y1="476" x2="782" y2="510" opacity="0.62"></line><line x1="816" y1="476" x2="782" y2="510" opacity="0.62"></line><line x1="850" y1="476" x2="816" y2="510" opacity="0.62"></line><line x1="884" y1="476" x2="850" y2="510" opacity="0.62"></line><line x1="918" y1="476" x2="884" y2="510" opacity="0.62"></line><line x1="952" y1="476" x2="918" y2="510" opacity="0.62"></line><line x1="986" y1="476" x2="952" y2="510" opacity="0.62"></line><line x1="1020" y1="476" x2="986" y2="510" opacity="0.62"></line><line x1="1054" y1="476" x2="1020" y2="510" opacity="0.62"></line><line x1="1088" y1="476" x2="1054" y2="510" opacity="0.62"></line><line x1="1088" y1="476" x2="1122" y2="510" opacity="0.62"></line><line x1="1156" y1="476" x2="1122" y2="510" opacity="0.62"></line><line x1="1190" y1="476" x2="1156" y2="510" opacity="0.62"></line><line x1="1190" y1="476" x2="1224" y2="510" opacity="0.62"></line><line x1="1224" y1="476" x2="1258" y2="510" opacity="0.62"></line><line x1="1292" y1="476" x2="1258" y2="510" opacity="0.62"></line><line x1="1326" y1="476" x2="1292" y2="510" opacity="0.62"></line><line x1="1360" y1="476" x2="1326" y2="510" opacity="0.62"></line><line x1="1394" y1="476" x2="1360" y2="510" opacity="0.62"></line><line x1="1428" y1="476" x2="1394" y2="510" opacity="0.62"></line><line x1="34" y1="510" x2="0" y2="544" opacity="0.66"></line><line x1="34" y1="510" x2="68" y2="544" opacity="0.66"></line><line x1="68" y1="510" x2="102" y2="544" opacity="0.66"></line><line x1="102" y1="510" x2="136" y2="544" opacity="0.66"></line><line x1="170" y1="510" x2="136" y2="544" opacity="0.66"></line><line x1="170" y1="510" x2="204" y2="544" opacity="0.66"></line><line x1="204" y1="510" x2="238" y2="544" opacity="0.66"></line><line x1="238" y1="510" x2="272" y2="544" opacity="0.66"></line><line x1="272" y1="510" x2="306" y2="544" opacity="0.66"></line><line x1="306" y1="510" x2="340" y2="544" opacity="0.66"></line><line x1="340" y1="510" x2="374" y2="544" opacity="0.66"></line><line x1="408" y1="510" x2="374" y2="544" opacity="0.66"></line><line x1="442" y1="510" x2="408" y2="544" opacity="0.66"></line><line x1="476" y1="510" x2="442" y2="544" opacity="0.66"></line><line x1="476" y1="510" x2="510" y2="544" opacity="0.66"></line><line x1="510" y1="510" x2="544" y2="544" opacity="0.66"></line><line x1="544" y1="510" x2="578" y2="544" opacity="0.66"></line><line x1="612" y1="510" x2="578" y2="544" opacity="0.66"></line><line x1="646" y1="510" x2="612" y2="544" opacity="0.66"></line><line x1="646" y1="510" x2="680" y2="544" opacity="0.66"></line><line x1="680" y1="510" x2="714" y2="544" opacity="0.66"></line><line x1="748" y1="510" x2="714" y2="544" opacity="0.66"></line><line x1="748" y1="510" x2="782" y2="544" opacity="0.66"></line><line x1="816" y1="510" x2="782" y2="544" opacity="0.66"></line><line x1="816" y1="510" x2="850" y2="544" opacity="0.66"></line><line x1="850" y1="510" x2="884" y2="544" opacity="0.66"></line><line x1="884" y1="510" x2="918" y2="544" opacity="0.66"></line><line x1="952" y1="510" x2="918" y2="544" opacity="0.66"></line><line x1="952" y1="510" x2="986" y2="544" opacity="0.66"></line><line x1="1020" y1="510" x2="986" y2="544" opacity="0.66"></line><line x1="1020" y1="510" x2="1054" y2="544" opacity="0.66"></line><line x1="1088" y1="510" x2="1054" y2="544" opacity="0.66"></line><line x1="1122" y1="510" x2="1088" y2="544" opacity="0.66"></line><line x1="1122" y1="510" x2="1156" y2="544" opacity="0.66"></line><line x1="1190" y1="510" x2="1156" y2="544" opacity="0.66"></line><line x1="1190" y1="510" x2="1224" y2="544" opacity="0.66"></line><line x1="1258" y1="510" x2="1224" y2="544" opacity="0.66"></line><line x1="1258" y1="510" x2="1292" y2="544" opacity="0.66"></line><line x1="1326" y1="510" x2="1292" y2="544" opacity="0.66"></line><line x1="1326" y1="510" x2="1360" y2="544" opacity="0.66"></line><line x1="1360" y1="510" x2="1394" y2="544" opacity="0.66"></line><line x1="1428" y1="510" x2="1394" y2="544" opacity="0.66"></line><line x1="0" y1="544" x2="34" y2="578" opacity="0.70"></line><line x1="34" y1="544" x2="68" y2="578" opacity="0.70"></line><line x1="102" y1="544" x2="68" y2="578" opacity="0.70"></line><line x1="136" y1="544" x2="102" y2="578" opacity="0.70"></line><line x1="136" y1="544" x2="170" y2="578" opacity="0.70"></line><line x1="204" y1="544" x2="170" y2="578" opacity="0.70"></line><line x1="238" y1="544" x2="204" y2="578" opacity="0.70"></line><line x1="238" y1="544" x2="272" y2="578" opacity="0.70"></line><line x1="272" y1="544" x2="306" y2="578" opacity="0.70"></line><line x1="306" y1="544" x2="340" y2="578" opacity="0.70"></line><line x1="374" y1="544" x2="340" y2="578" opacity="0.70"></line><line x1="374" y1="544" x2="408" y2="578" opacity="0.70"></line><line x1="442" y1="544" x2="408" y2="578" opacity="0.70"></line><line x1="476" y1="544" x2="442" y2="578" opacity="0.70"></line><line x1="476" y1="544" x2="510" y2="578" opacity="0.70"></line><line x1="510" y1="544" x2="544" y2="578" opacity="0.70"></line><line x1="578" y1="544" x2="544" y2="578" opacity="0.70"></line><line x1="612" y1="544" x2="578" y2="578" opacity="0.70"></line><line x1="612" y1="544" x2="646" y2="578" opacity="0.70"></line><line x1="646" y1="544" x2="680" y2="578" opacity="0.70"></line><line x1="714" y1="544" x2="680" y2="578" opacity="0.70"></line><line x1="714" y1="544" x2="748" y2="578" opacity="0.70"></line><line x1="782" y1="544" x2="748" y2="578" opacity="0.70"></line><line x1="816" y1="544" x2="782" y2="578" opacity="0.70"></line><line x1="850" y1="544" x2="816" y2="578" opacity="0.70"></line><line x1="850" y1="544" x2="884" y2="578" opacity="0.70"></line><line x1="918" y1="544" x2="884" y2="578" opacity="0.70"></line><line x1="952" y1="544" x2="918" y2="578" opacity="0.70"></line><line x1="952" y1="544" x2="986" y2="578" opacity="0.70"></line><line x1="1020" y1="544" x2="986" y2="578" opacity="0.70"></line><line x1="1054" y1="544" x2="1020" y2="578" opacity="0.70"></line><line x1="1088" y1="544" x2="1054" y2="578" opacity="0.70"></line><line x1="1122" y1="544" x2="1088" y2="578" opacity="0.70"></line><line x1="1122" y1="544" x2="1156" y2="578" opacity="0.70"></line><line x1="1156" y1="544" x2="1190" y2="578" opacity="0.70"></line><line x1="1224" y1="544" x2="1190" y2="578" opacity="0.70"></line><line x1="1224" y1="544" x2="1258" y2="578" opacity="0.70"></line><line x1="1292" y1="544" x2="1258" y2="578" opacity="0.70"></line><line x1="1292" y1="544" x2="1326" y2="578" opacity="0.70"></line><line x1="1360" y1="544" x2="1326" y2="578" opacity="0.70"></line><line x1="1360" y1="544" x2="1394" y2="578" opacity="0.70"></line><line x1="1394" y1="544" x2="1428" y2="578" opacity="0.70"></line><line x1="34" y1="578" x2="0" y2="612" opacity="0.74"></line><line x1="34" y1="578" x2="68" y2="612" opacity="0.74"></line><line x1="102" y1="578" x2="68" y2="612" opacity="0.74"></line><line x1="102" y1="578" x2="136" y2="612" opacity="0.74"></line><line x1="136" y1="578" x2="170" y2="612" opacity="0.74"></line><line x1="170" y1="578" x2="204" y2="612" opacity="0.74"></line><line x1="238" y1="578" x2="204" y2="612" opacity="0.74"></line><line x1="238" y1="578" x2="272" y2="612" opacity="0.74"></line><line x1="306" y1="578" x2="272" y2="612" opacity="0.74"></line><line x1="340" y1="578" x2="306" y2="612" opacity="0.74"></line><line x1="374" y1="578" x2="340" y2="612" opacity="0.74"></line><line x1="374" y1="578" x2="408" y2="612" opacity="0.74"></line><line x1="442" y1="578" x2="408" y2="612" opacity="0.74"></line><line x1="476" y1="578" x2="442" y2="612" opacity="0.74"></line><line x1="510" y1="578" x2="476" y2="612" opacity="0.74"></line><line x1="510" y1="578" x2="544" y2="612" opacity="0.74"></line><line x1="578" y1="578" x2="544" y2="612" opacity="0.74"></line><line x1="612" y1="578" x2="578" y2="612" opacity="0.74"></line><line x1="612" y1="578" x2="646" y2="612" opacity="0.74"></line><line x1="680" y1="578" x2="646" y2="612" opacity="0.74"></line><line x1="714" y1="578" x2="680" y2="612" opacity="0.74"></line><line x1="748" y1="578" x2="714" y2="612" opacity="0.74"></line><line x1="748" y1="578" x2="782" y2="612" opacity="0.74"></line><line x1="816" y1="578" x2="782" y2="612" opacity="0.74"></line><line x1="816" y1="578" x2="850" y2="612" opacity="0.74"></line><line x1="850" y1="578" x2="884" y2="612" opacity="0.74"></line><line x1="918" y1="578" x2="884" y2="612" opacity="0.74"></line><line x1="918" y1="578" x2="952" y2="612" opacity="0.74"></line><line x1="986" y1="578" x2="952" y2="612" opacity="0.74"></line><line x1="986" y1="578" x2="1020" y2="612" opacity="0.74"></line><line x1="1020" y1="578" x2="1054" y2="612" opacity="0.74"></line><line x1="1088" y1="578" x2="1054" y2="612" opacity="0.74"></line><line x1="1088" y1="578" x2="1122" y2="612" opacity="0.74"></line><line x1="1122" y1="578" x2="1156" y2="612" opacity="0.74"></line><line x1="1190" y1="578" x2="1156" y2="612" opacity="0.74"></line><line x1="1224" y1="578" x2="1190" y2="612" opacity="0.74"></line><line x1="1258" y1="578" x2="1224" y2="612" opacity="0.74"></line><line x1="1258" y1="578" x2="1292" y2="612" opacity="0.74"></line><line x1="1292" y1="578" x2="1326" y2="612" opacity="0.74"></line><line x1="1360" y1="578" x2="1326" y2="612" opacity="0.74"></line><line x1="1360" y1="578" x2="1394" y2="612" opacity="0.74"></line><line x1="1428" y1="578" x2="1394" y2="612" opacity="0.74"></line><line x1="34" y1="612" x2="0" y2="646" opacity="0.78"></line><line x1="68" y1="612" x2="34" y2="646" opacity="0.78"></line><line x1="68" y1="612" x2="102" y2="646" opacity="0.78"></line><line x1="102" y1="612" x2="136" y2="646" opacity="0.78"></line><line x1="170" y1="612" x2="136" y2="646" opacity="0.78"></line><line x1="170" y1="612" x2="204" y2="646" opacity="0.78"></line><line x1="238" y1="612" x2="204" y2="646" opacity="0.78"></line><line x1="238" y1="612" x2="272" y2="646" opacity="0.78"></line><line x1="306" y1="612" x2="272" y2="646" opacity="0.78"></line><line x1="306" y1="612" x2="340" y2="646" opacity="0.78"></line><line x1="340" y1="612" x2="374" y2="646" opacity="0.78"></line><line x1="408" y1="612" x2="374" y2="646" opacity="0.78"></line><line x1="442" y1="612" x2="408" y2="646" opacity="0.78"></line><line x1="476" y1="612" x2="442" y2="646" opacity="0.78"></line><line x1="476" y1="612" x2="510" y2="646" opacity="0.78"></line><line x1="510" y1="612" x2="544" y2="646" opacity="0.78"></line><line x1="544" y1="612" x2="578" y2="646" opacity="0.78"></line><line x1="578" y1="612" x2="612" y2="646" opacity="0.78"></line><line x1="646" y1="612" x2="612" y2="646" opacity="0.78"></line><line x1="646" y1="612" x2="680" y2="646" opacity="0.78"></line><line x1="680" y1="612" x2="714" y2="646" opacity="0.78"></line><line x1="748" y1="612" x2="714" y2="646" opacity="0.78"></line><line x1="782" y1="612" x2="748" y2="646" opacity="0.78"></line><line x1="782" y1="612" x2="816" y2="646" opacity="0.78"></line><line x1="816" y1="612" x2="850" y2="646" opacity="0.78"></line><line x1="884" y1="612" x2="850" y2="646" opacity="0.78"></line><line x1="918" y1="612" x2="884" y2="646" opacity="0.78"></line><line x1="918" y1="612" x2="952" y2="646" opacity="0.78"></line><line x1="986" y1="612" x2="952" y2="646" opacity="0.78"></line><line x1="1020" y1="612" x2="986" y2="646" opacity="0.78"></line><line x1="1020" y1="612" x2="1054" y2="646" opacity="0.78"></line><line x1="1088" y1="612" x2="1054" y2="646" opacity="0.78"></line><line x1="1088" y1="612" x2="1122" y2="646" opacity="0.78"></line><line x1="1156" y1="612" x2="1122" y2="646" opacity="0.78"></line><line x1="1156" y1="612" x2="1190" y2="646" opacity="0.78"></line><line x1="1224" y1="612" x2="1190" y2="646" opacity="0.78"></line><line x1="1258" y1="612" x2="1224" y2="646" opacity="0.78"></line><line x1="1292" y1="612" x2="1258" y2="646" opacity="0.78"></line><line x1="1292" y1="612" x2="1326" y2="646" opacity="0.78"></line><line x1="1360" y1="612" x2="1326" y2="646" opacity="0.78"></line><line x1="1360" y1="612" x2="1394" y2="646" opacity="0.78"></line><line x1="1394" y1="612" x2="1428" y2="646" opacity="0.78"></line><line x1="34" y1="646" x2="0" y2="680" opacity="0.82"></line><line x1="68" y1="646" x2="34" y2="680" opacity="0.82"></line><line x1="102" y1="646" x2="68" y2="680" opacity="0.82"></line><line x1="136" y1="646" x2="102" y2="680" opacity="0.82"></line><line x1="136" y1="646" x2="170" y2="680" opacity="0.82"></line><line x1="204" y1="646" x2="170" y2="680" opacity="0.82"></line><line x1="238" y1="646" x2="204" y2="680" opacity="0.82"></line><line x1="238" y1="646" x2="272" y2="680" opacity="0.82"></line><line x1="272" y1="646" x2="306" y2="680" opacity="0.82"></line><line x1="340" y1="646" x2="306" y2="680" opacity="0.82"></line><line x1="374" y1="646" x2="340" y2="680" opacity="0.82"></line><line x1="374" y1="646" x2="408" y2="680" opacity="0.82"></line><line x1="442" y1="646" x2="408" y2="680" opacity="0.82"></line><line x1="476" y1="646" x2="442" y2="680" opacity="0.82"></line><line x1="510" y1="646" x2="476" y2="680" opacity="0.82"></line><line x1="510" y1="646" x2="544" y2="680" opacity="0.82"></line><line x1="578" y1="646" x2="544" y2="680" opacity="0.82"></line><line x1="612" y1="646" x2="578" y2="680" opacity="0.82"></line><line x1="646" y1="646" x2="612" y2="680" opacity="0.82"></line><line x1="646" y1="646" x2="680" y2="680" opacity="0.82"></line><line x1="680" y1="646" x2="714" y2="680" opacity="0.82"></line><line x1="748" y1="646" x2="714" y2="680" opacity="0.82"></line><line x1="748" y1="646" x2="782" y2="680" opacity="0.82"></line><line x1="782" y1="646" x2="816" y2="680" opacity="0.82"></line><line x1="816" y1="646" x2="850" y2="680" opacity="0.82"></line><line x1="884" y1="646" x2="850" y2="680" opacity="0.82"></line><line x1="918" y1="646" x2="884" y2="680" opacity="0.82"></line><line x1="952" y1="646" x2="918" y2="680" opacity="0.82"></line><line x1="986" y1="646" x2="952" y2="680" opacity="0.82"></line><line x1="986" y1="646" x2="1020" y2="680" opacity="0.82"></line><line x1="1020" y1="646" x2="1054" y2="680" opacity="0.82"></line><line x1="1054" y1="646" x2="1088" y2="680" opacity="0.82"></line><line x1="1088" y1="646" x2="1122" y2="680" opacity="0.82"></line><line x1="1156" y1="646" x2="1122" y2="680" opacity="0.82"></line><line x1="1190" y1="646" x2="1156" y2="680" opacity="0.82"></line><line x1="1224" y1="646" x2="1190" y2="680" opacity="0.82"></line><line x1="1258" y1="646" x2="1224" y2="680" opacity="0.82"></line><line x1="1258" y1="646" x2="1292" y2="680" opacity="0.82"></line><line x1="1326" y1="646" x2="1292" y2="680" opacity="0.82"></line><line x1="1360" y1="646" x2="1326" y2="680" opacity="0.82"></line><line x1="1360" y1="646" x2="1394" y2="680" opacity="0.82"></line><line x1="1394" y1="646" x2="1428" y2="680" opacity="0.82"></line><line x1="34" y1="680" x2="0" y2="714" opacity="0.86"></line><line x1="34" y1="680" x2="68" y2="714" opacity="0.86"></line><line x1="102" y1="680" x2="68" y2="714" opacity="0.86"></line><line x1="136" y1="680" x2="102" y2="714" opacity="0.86"></line><line x1="136" y1="680" x2="170" y2="714" opacity="0.86"></line><line x1="204" y1="680" x2="170" y2="714" opacity="0.86"></line><line x1="238" y1="680" x2="204" y2="714" opacity="0.86"></line><line x1="272" y1="680" x2="238" y2="714" opacity="0.86"></line><line x1="272" y1="680" x2="306" y2="714" opacity="0.86"></line><line x1="340" y1="680" x2="306" y2="714" opacity="0.86"></line><line x1="374" y1="680" x2="340" y2="714" opacity="0.86"></line><line x1="374" y1="680" x2="408" y2="714" opacity="0.86"></line><line x1="442" y1="680" x2="408" y2="714" opacity="0.86"></line><line x1="476" y1="680" x2="442" y2="714" opacity="0.86"></line><line x1="476" y1="680" x2="510" y2="714" opacity="0.86"></line><line x1="510" y1="680" x2="544" y2="714" opacity="0.86"></line><line x1="544" y1="680" x2="578" y2="714" opacity="0.86"></line><line x1="612" y1="680" x2="578" y2="714" opacity="0.86"></line><line x1="646" y1="680" x2="612" y2="714" opacity="0.86"></line><line x1="680" y1="680" x2="646" y2="714" opacity="0.86"></line><line x1="714" y1="680" x2="680" y2="714" opacity="0.86"></line><line x1="748" y1="680" x2="714" y2="714" opacity="0.86"></line><line x1="782" y1="680" x2="748" y2="714" opacity="0.86"></line><line x1="816" y1="680" x2="782" y2="714" opacity="0.86"></line><line x1="850" y1="680" x2="816" y2="714" opacity="0.86"></line><line x1="884" y1="680" x2="850" y2="714" opacity="0.86"></line><line x1="918" y1="680" x2="884" y2="714" opacity="0.86"></line><line x1="918" y1="680" x2="952" y2="714" opacity="0.86"></line><line x1="986" y1="680" x2="952" y2="714" opacity="0.86"></line><line x1="1020" y1="680" x2="986" y2="714" opacity="0.86"></line><line x1="1054" y1="680" x2="1020" y2="714" opacity="0.86"></line><line x1="1054" y1="680" x2="1088" y2="714" opacity="0.86"></line><line x1="1122" y1="680" x2="1088" y2="714" opacity="0.86"></line><line x1="1156" y1="680" x2="1122" y2="714" opacity="0.86"></line><line x1="1190" y1="680" x2="1156" y2="714" opacity="0.86"></line><line x1="1224" y1="680" x2="1190" y2="714" opacity="0.86"></line><line x1="1224" y1="680" x2="1258" y2="714" opacity="0.86"></line><line x1="1258" y1="680" x2="1292" y2="714" opacity="0.86"></line><line x1="1326" y1="680" x2="1292" y2="714" opacity="0.86"></line><line x1="1326" y1="680" x2="1360" y2="714" opacity="0.86"></line><line x1="1394" y1="680" x2="1360" y2="714" opacity="0.86"></line><line x1="1428" y1="680" x2="1394" y2="714" opacity="0.86"></line><line x1="0" y1="714" x2="34" y2="748" opacity="0.90"></line><line x1="34" y1="714" x2="68" y2="748" opacity="0.90"></line><line x1="102" y1="714" x2="68" y2="748" opacity="0.90"></line><line x1="102" y1="714" x2="136" y2="748" opacity="0.90"></line><line x1="136" y1="714" x2="170" y2="748" opacity="0.90"></line><line x1="204" y1="714" x2="170" y2="748" opacity="0.90"></line><line x1="204" y1="714" x2="238" y2="748" opacity="0.90"></line><line x1="238" y1="714" x2="272" y2="748" opacity="0.90"></line><line x1="272" y1="714" x2="306" y2="748" opacity="0.90"></line><line x1="306" y1="714" x2="340" y2="748" opacity="0.90"></line><line x1="374" y1="714" x2="340" y2="748" opacity="0.90"></line><line x1="408" y1="714" x2="374" y2="748" opacity="0.90"></line><line x1="408" y1="714" x2="442" y2="748" opacity="0.90"></line><line x1="476" y1="714" x2="442" y2="748" opacity="0.90"></line><line x1="510" y1="714" x2="476" y2="748" opacity="0.90"></line><line x1="510" y1="714" x2="544" y2="748" opacity="0.90"></line><line x1="544" y1="714" x2="578" y2="748" opacity="0.90"></line><line x1="612" y1="714" x2="578" y2="748" opacity="0.90"></line><line x1="612" y1="714" x2="646" y2="748" opacity="0.90"></line><line x1="646" y1="714" x2="680" y2="748" opacity="0.90"></line><line x1="714" y1="714" x2="680" y2="748" opacity="0.90"></line><line x1="748" y1="714" x2="714" y2="748" opacity="0.90"></line><line x1="782" y1="714" x2="748" y2="748" opacity="0.90"></line><line x1="816" y1="714" x2="782" y2="748" opacity="0.90"></line><line x1="850" y1="714" x2="816" y2="748" opacity="0.90"></line><line x1="884" y1="714" x2="850" y2="748" opacity="0.90"></line><line x1="884" y1="714" x2="918" y2="748" opacity="0.90"></line><line x1="952" y1="714" x2="918" y2="748" opacity="0.90"></line><line x1="986" y1="714" x2="952" y2="748" opacity="0.90"></line><line x1="986" y1="714" x2="1020" y2="748" opacity="0.90"></line><line x1="1054" y1="714" x2="1020" y2="748" opacity="0.90"></line><line x1="1054" y1="714" x2="1088" y2="748" opacity="0.90"></line><line x1="1122" y1="714" x2="1088" y2="748" opacity="0.90"></line><line x1="1122" y1="714" x2="1156" y2="748" opacity="0.90"></line><line x1="1156" y1="714" x2="1190" y2="748" opacity="0.90"></line><line x1="1190" y1="714" x2="1224" y2="748" opacity="0.90"></line><line x1="1224" y1="714" x2="1258" y2="748" opacity="0.90"></line><line x1="1292" y1="714" x2="1258" y2="748" opacity="0.90"></line><line x1="1326" y1="714" x2="1292" y2="748" opacity="0.90"></line><line x1="1326" y1="714" x2="1360" y2="748" opacity="0.90"></line><line x1="1394" y1="714" x2="1360" y2="748" opacity="0.90"></line><line x1="1428" y1="714" x2="1394" y2="748" opacity="0.90"></line><line x1="0" y1="748" x2="34" y2="782" opacity="0.94"></line><line x1="68" y1="748" x2="34" y2="782" opacity="0.94"></line><line x1="102" y1="748" x2="68" y2="782" opacity="0.94"></line><line x1="136" y1="748" x2="102" y2="782" opacity="0.94"></line><line x1="170" y1="748" x2="136" y2="782" opacity="0.94"></line><line x1="204" y1="748" x2="170" y2="782" opacity="0.94"></line><line x1="238" y1="748" x2="204" y2="782" opacity="0.94"></line><line x1="272" y1="748" x2="238" y2="782" opacity="0.94"></line><line x1="272" y1="748" x2="306" y2="782" opacity="0.94"></line><line x1="340" y1="748" x2="306" y2="782" opacity="0.94"></line><line x1="374" y1="748" x2="340" y2="782" opacity="0.94"></line><line x1="408" y1="748" x2="374" y2="782" opacity="0.94"></line><line x1="442" y1="748" x2="408" y2="782" opacity="0.94"></line><line x1="476" y1="748" x2="442" y2="782" opacity="0.94"></line><line x1="510" y1="748" x2="476" y2="782" opacity="0.94"></line><line x1="510" y1="748" x2="544" y2="782" opacity="0.94"></line><line x1="544" y1="748" x2="578" y2="782" opacity="0.94"></line><line x1="612" y1="748" x2="578" y2="782" opacity="0.94"></line><line x1="646" y1="748" x2="612" y2="782" opacity="0.94"></line><line x1="646" y1="748" x2="680" y2="782" opacity="0.94"></line><line x1="680" y1="748" x2="714" y2="782" opacity="0.94"></line><line x1="748" y1="748" x2="714" y2="782" opacity="0.94"></line><line x1="782" y1="748" x2="748" y2="782" opacity="0.94"></line><line x1="816" y1="748" x2="782" y2="782" opacity="0.94"></line><line x1="850" y1="748" x2="816" y2="782" opacity="0.94"></line><line x1="850" y1="748" x2="884" y2="782" opacity="0.94"></line><line x1="918" y1="748" x2="884" y2="782" opacity="0.94"></line><line x1="918" y1="748" x2="952" y2="782" opacity="0.94"></line><line x1="986" y1="748" x2="952" y2="782" opacity="0.94"></line><line x1="1020" y1="748" x2="986" y2="782" opacity="0.94"></line><line x1="1054" y1="748" x2="1020" y2="782" opacity="0.94"></line><line x1="1054" y1="748" x2="1088" y2="782" opacity="0.94"></line><line x1="1122" y1="748" x2="1088" y2="782" opacity="0.94"></line><line x1="1156" y1="748" x2="1122" y2="782" opacity="0.94"></line><line x1="1190" y1="748" x2="1156" y2="782" opacity="0.94"></line><line x1="1224" y1="748" x2="1190" y2="782" opacity="0.94"></line><line x1="1258" y1="748" x2="1224" y2="782" opacity="0.94"></line><line x1="1292" y1="748" x2="1258" y2="782" opacity="0.94"></line><line x1="1292" y1="748" x2="1326" y2="782" opacity="0.94"></line><line x1="1326" y1="748" x2="1360" y2="782" opacity="0.94"></line><line x1="1394" y1="748" x2="1360" y2="782" opacity="0.94"></line><line x1="1428" y1="748" x2="1394" y2="782" opacity="0.94"></line><line x1="0" y1="782" x2="34" y2="816" opacity="0.98"></line><line x1="68" y1="782" x2="34" y2="816" opacity="0.98"></line><line x1="68" y1="782" x2="102" y2="816" opacity="0.98"></line><line x1="136" y1="782" x2="102" y2="816" opacity="0.98"></line><line x1="136" y1="782" x2="170" y2="816" opacity="0.98"></line><line x1="204" y1="782" x2="170" y2="816" opacity="0.98"></line><line x1="204" y1="782" x2="238" y2="816" opacity="0.98"></line><line x1="238" y1="782" x2="272" y2="816" opacity="0.98"></line><line x1="306" y1="782" x2="272" y2="816" opacity="0.98"></line><line x1="340" y1="782" x2="306" y2="816" opacity="0.98"></line><line x1="340" y1="782" x2="374" y2="816" opacity="0.98"></line><line x1="408" y1="782" x2="374" y2="816" opacity="0.98"></line><line x1="408" y1="782" x2="442" y2="816" opacity="0.98"></line><line x1="476" y1="782" x2="442" y2="816" opacity="0.98"></line><line x1="476" y1="782" x2="510" y2="816" opacity="0.98"></line><line x1="544" y1="782" x2="510" y2="816" opacity="0.98"></line><line x1="578" y1="782" x2="544" y2="816" opacity="0.98"></line><line x1="612" y1="782" x2="578" y2="816" opacity="0.98"></line><line x1="646" y1="782" x2="612" y2="816" opacity="0.98"></line><line x1="680" y1="782" x2="646" y2="816" opacity="0.98"></line><line x1="714" y1="782" x2="680" y2="816" opacity="0.98"></line><line x1="748" y1="782" x2="714" y2="816" opacity="0.98"></line><line x1="782" y1="782" x2="748" y2="816" opacity="0.98"></line><line x1="816" y1="782" x2="782" y2="816" opacity="0.98"></line><line x1="816" y1="782" x2="850" y2="816" opacity="0.98"></line><line x1="884" y1="782" x2="850" y2="816" opacity="0.98"></line><line x1="918" y1="782" x2="884" y2="816" opacity="0.98"></line><line x1="952" y1="782" x2="918" y2="816" opacity="0.98"></line><line x1="986" y1="782" x2="952" y2="816" opacity="0.98"></line><line x1="1020" y1="782" x2="986" y2="816" opacity="0.98"></line><line x1="1020" y1="782" x2="1054" y2="816" opacity="0.98"></line><line x1="1088" y1="782" x2="1054" y2="816" opacity="0.98"></line><line x1="1122" y1="782" x2="1088" y2="816" opacity="0.98"></line><line x1="1156" y1="782" x2="1122" y2="816" opacity="0.98"></line><line x1="1190" y1="782" x2="1156" y2="816" opacity="0.98"></line><line x1="1190" y1="782" x2="1224" y2="816" opacity="0.98"></line><line x1="1258" y1="782" x2="1224" y2="816" opacity="0.98"></line><line x1="1292" y1="782" x2="1258" y2="816" opacity="0.98"></line><line x1="1292" y1="782" x2="1326" y2="816" opacity="0.98"></line><line x1="1326" y1="782" x2="1360" y2="816" opacity="0.98"></line><line x1="1360" y1="782" x2="1394" y2="816" opacity="0.98"></line><line x1="1428" y1="782" x2="1394" y2="816" opacity="0.98"></line></g></svg>
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #14213d;
+  border-radius: 100vw;
+  border:3px solid #fca311;
+}
+body::-webkit-scrollbar-thumb:hover{
+  background-color: #fca311;
+}
 
-            </div>
-            <div class="col-md-9 right-cont" data-aos="fade-up" >
-                <h1 class="display-1" >
-                    <span class="drop">
-                      Hi!
-                    </span>
-                    <span class="slide">
-                      I am <span class="slide"><br></span> Prastab Mukhopadhyay
-                    </span>
-                  </h1>
-                  <p>An aspiring Web Developer...</p><br>
-                  <a href="#skills" class="btn btn-outline-warning" >Know More</a>
-                  <a href="https://drive.google.com/file/d/1c_tjgdSfxYQYFwF5Ypc0VK5e0mJvdoZI/view?usp=sharing" target="_blank" style="margin-left: 2%;"class="btn btn-outline-warning"> Get my CV</a>
-              
-            </div>
-        </div>
-    </div>
-    <!-- #skills -->
-    <div  id="skills">
-        <h2 class="display-3"data-aos="slide-up">My Skills</h2>
-        <br>
-        <div class="container container-fluid">
-          <div class="row" >
-            <div class="col-md-3 d-flex justify-content-around align-items-center html-icon icon" data-aos="zoom-in">
-              <p>
-                  HTML5
-              </p>
-              <img src="images/icons/html.png" alt="">
-          </div>
-          <div class="col-md-3 d-flex justify-content-around align-items-center css-icon icon" data-aos="zoom-in">
-            <p>
-                CSS3
-            </p>
-            <img src="images/icons/css-3(1).png" alt="">
-        </div>
-        <div class="col-md-3 d-flex justify-content-around align-items-center js-icon icon" data-aos="zoom-in">
-          <p>
-              JavaScript 
-          </p>
-          <img src="images/icons/js(1).png" alt="">
-      </div>
-      <div class="col-md-3 d-flex justify-content-around align-items-center boot-icon icon" data-aos="zoom-in">
-        <p>
-            Bootstrap
-        </p>
-        <img src="images/icons/bootstrap.png" alt="">
-    </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 d-flex justify-content-around align-items-center java-icon icon" data-aos="zoom-in">
-              <p>
-                  Java
-              </p>
-              <img src="images/icons/java(1).png" alt="">
-          </div>
-          <div class="col-md-3 d-flex justify-content-around align-items-center py-icon icon" data-aos="zoom-in">
-            <p>
-                Python
-            </p>
-            <img src="images/icons/python(1).png" alt="">
-        </div>
-        <div class="col-md-3 d-flex justify-content-around align-items-center ora-icon icon" data-aos="zoom-in">
-          <p>
-              Oracle
-          </p>
-          <img src="images/icons/oracle(1).png" alt="">
-      </div>
-      <div class="col-md-3 d-flex justify-content-around align-items-center mongo-icon icon" data-aos="zoom-in">
-        <p>
-            MongoDB
-        </p>
-        <img src="images/icons/mongodb.png" alt="">
-    </div>
-          </div>
-        </div>
-    </div>
-    <!-- projects -->
-    <div class="container" id="projects">
-        <h2 class="display-3"data-aos="slide-up">My Projects</h2>
-        <div class="row">
-            <div class="project col-md-4" data-aos="fade-down">
-                <div class="card project pcard" style="max-width: 18rem; margin-bottom: 20px;">
-                    <img src="images/clotho.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">E commerce website</h5>
-                      <p class="card-text">Made with:</p>
-                      <p class="card-text"><span>
-                        <img src="images/icons/html.png" alt="" style="height: 20px;width: 20px;">
-                      </span> <span><img src="images/icons/css-3(1).png" alt="" style="height: 20px;width: 20px;"></span> 
-                      <span></span> <span>
-                        <img src="images/icons/js(1).png" alt="" style="height: 20px;width: 20px;">
-                      </span> <span>
-                        <img src="images/icons/bootstrap.png" alt="" style="height: 20px;width: 20px;">
-                      </span> <span><img src="images/icons/java(1).png" alt="" style="height: 20px;width: 20px;"></span> 
-                      <span>
-                        <img src="images/icons/oracle(1).png" alt="" style="height: 30px;width: 30px;">
-                      </span>
-                    </p>
-                      
-                      <a href="https://github.com/Prastabm/minor_project" class="btn btn-warning"><span><img src="images/icons/github(1).png" alt="" style="height: 20px;width: 20px;"></span> Github</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="project col-md-4"data-aos="fade-down">
-                <div class="card project pcard" style="max-width: 18rem; margin-bottom: 20px;">
-                    <img src="images/password manager.png" class="card-img-top img-thumbnail" alt="..." style="height: 212px;">
-                    <div class="card-body">
-                      <h6 class="card-title">Password Genertor and manager</h6>
-                      <p class="card-text">Made with:</p>
-                      <p class="card-text"><span><img src="images/icons/python(1).png" alt="" style="height: 20px;width: 20px;"></span> 
-                        <span>
-                            <img src="images/icons/oracle(1).png" alt="" style="height: 30px;width: 30px;">
-                        </span> </p>
-                      <a href="https://github.com/Prastabm/Password-manager-and-generator" class="btn btn-warning"><span><img src="images/icons/github(1).png" alt="" style="height: 20px;width: 20px;"></span> Github</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="project col-md-4"data-aos="fade-down">
-                <div class="card project pcard" style="max-width: 18rem;margin-bottom: 20px;">
-                    <img src="images/snakesndladders.jpg" class="card-img-top img-thumbnail" alt="..." style="height: 212px;">
-                    <div class="card-body">
-                      <h6 class="card-title">Snakes and Ladders: Micro Project</h6>
-                      <p class="card-text">Made with:</p>
-                      <p class="card-text"><span><img src="images/icons/java(1).png" alt="" style="height: 20px;width: 20px;"></span> </p>
-                      <a href="https://github.com/Prastabm/Java_Games/tree/main/src/packages/com/snakes_and_ladders" class="btn btn-warning"><span><img src="images/icons/github(1).png" alt="" style="height: 20px;width: 20px;"></span> Github</a>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #fca311;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
 
-    <!-- #education -->
-    <div class="container" id="education">
-        
-            
-                <h2 class="display-3"data-aos="slide-up">
-                    My Education
-                </h2>
-                <div class="row">
-                    <div class="col-md-4 ed"data-aos="flip-right">
-                        <div class="card mb-3 ecard" style="max-width: 18rem;">
-                            <img src="images/makaut.jpeg" class="card-img-top img-thumbnail" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Bachelor's in Computer Applications(Hons.)</h5>
-                              <p class="card-text">
-                                Subject: Comp. Applications(Grade till 4th Semester: 8.8 CGPA)
-                              </p>
-                              
-                              <p>2021-Present</p>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-md-4 ed"data-aos="flip-right">
-                        <div class="card mb-3 ecard" style="max-width: 18rem;">
-                            <img src="images/cbse.png" class="card-img-top img-thumbnail" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">All India Senior Secondary Certificate Examination</h5>
-                              <p class="card-text">
-                                Subject: PCM with Computer Science(Grade:76.5%)
-                              </p>
-                              
-                              <p>2019-2021</p>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-md-4 ed "data-aos="flip-right">
-                        <div class="card mb-3 ecard" style="max-width: 18rem;">
-                            <img src="images/icse.jpeg" class="card-img-top img-thumbnail" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Indian Certificate of Secondary Examination</h5>
-                              <p class="card-text">Subject: Gen Studies(Grade:88.6%)</p>
-                              <p> </p><br>
-                              <p>2006-2019</p>
-                            </div>
-                          </div>
-                    </div>
-                
-           
-            
-        </div>
-    </div>
+#myBtn:hover {
+  background-color: #14213d;
+  border: 5px solid #fca311;
+}
 
-    <!-- #contact -->
-    <div class="contact" id="contact" style="background-color: #14213d;">
-        <div class="container container-fluid">
-            <br>
-            <h2 data-aos="slide-up" class="display-3" style="color: white; border-bottom: 3px solid #fca311; width: 50%; padding-bottom: 5px;">Contact Me</h2>
-            <br><br>
-            <div class="row">
-                
-                <div data-aos="slide-up" class="col-md-6 cont" style="margin-bottom: 25px;">
-                    <h4 style="color: white;">Drop a text</h4>
-                    <form action="https://formspree.io/f/xeqyjwjz" method="post">
-                        <div class="mb-3">
-                            <label for="name" class="form-label" style="color: white;">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" style="border: 3px solid #fca311;">
-                          </div>
-                        <div class="mb-3">
-                          <label for="email" class="form-label" style="color: white;">Email address</label>
-                          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" style="border: 3px solid #fca311;">
-                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" style="color:white;">Enter your message</label>
-                            <textarea class="form-control" id="message" name="message" rows="4" style="border: 3px solid #fca311;"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-warning">Submit</button>
-                      </form>
-                </div>
-                <div data-aos="slide-up" class="col-md-6 cont">
-                    <h4 style="color: white;">Find me here</h4>
-                    <br>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6878.270203355991!2d88.34560744334536!3d22.751036305981877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1703505407870!5m2!1sen!2sin" width="auto" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                
-            </div>
-        </div>
-        <br><br>
-      </div>
-      <div class="footer">
-        <div class="made">
-          <p style="margin-bottom: 0;">Made with:</p>
-        <p style="margin-bottom: 0;"><span><img src="images/icons/html.png" style="height: 25px; width: 25px;" alt=""></span> <span><img src="images/icons/css-3(1).png" style="height: 25px; width: 25px;" alt=""></span> <span><img src="images/icons/js(1).png"  style="height: 25px; width: 25px;"alt=""></span> <span><img src="images/icons/bootstrap.png" style="height: 25px; width: 25px;" alt=""></span></p>
-        </div>
-        <div class="copyright">
-          <p style="text-align: center;">&#169; All rights reserved | Made by Prastab Mukhopadhyay</p>
-        </div>
-        <div class="connection-links">
-          <p style="margin-bottom: 0;">Connect with me:</p>
-          <p style="margin-bottom: 0;">
-            <a href="https://www.linkedin.com/in/prastab-mukhopadhyay-8b342923b/">
-              <img src="images/icons/linkedin.jpg" alt="" style="height: 25px; width: 25px;">
-            </a>
-            <a href="https://github.com/Prastabm">
-              <img src="images/icons/github(1).png" alt="" style="height: 25px;width: 25px;">
-            </a>
-            <a href="mailto:prastab.mykhopadhyay0810@gmail.com">
-              <img src="images/icons/gmail.jpg" alt="" style="height: 25px;width: 25px;">
-            </a>
-          </p>
-        </div>
-      </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            offset: 200,
-            easing: 'ease-in-out'
-        });
+.nav-link{
+color: white;
+}
+.nav-link:hover{
+color:#fca311;
+border-bottom: 1px solid #fca311;
+}
+#intro{
+margin: 0;
+max-width: 100%;
+padding: 0;
+height: 95vh;
+background-image: url(/images/background.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+-webkit-box-shadow: inset -4px -50px 35px -30px #000000; 
+box-shadow: inset -4px -50px 35px -30px #000000;
+}
 
-        // Get the button
-let mybutton = document.getElementById("myBtn");
+.left-cont{
+  max-width: 15vw;
+  -webkit-box-shadow: inset -4px -50px 35px -30px #000000; 
+box-shadow: inset -4px -50px 35px -30px #000000;
+  >img{
+    border-radius: 50%;
+    margin:5px;
+  }
+  }
+  .right-cont{
+  max-width: 85vw;
+  padding-top: 12%;
+  
+  
+  >h1{
+  min-width:50%;
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  >.drop{
+    color: #fca311;
+  }
+  }
+  >p{
+  color: #fca311;
+  font-size: 20px;
+  }
+  }
+  
+.html-icon{
+  
+  
+  width: 200px;
+ 
+  border-radius: 1rem;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+  >img{
+      height: 50px;
+  }
+  >p{
+      font-family: 'Koulen', sans-serif;
+      font-size: 50px;
+      padding-top: 16px;
+      text-align:center;
+      color: white;
+  }
+}
+.html-icon:hover{
+  background: rgb(240,101,41);
+  background: linear-gradient(148deg, rgba(240,101,41,1) 0%, rgba(216,76,41,1) 45%, rgba(240,101,41,1) 94%);
+}
+.css-icon{
+  
+  
+  width: 200px;
+   
+  border-radius: 1rem;
+  
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+  >img{
+      height: 50px;
+  }
+  >p{
+      font-family: 'Koulen', sans-serif;
+      font-size: 50px;
+      padding-top: 16px;
+      text-align:center;
+      color: white;
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+.css-icon:hover{
+  background: rgb(0,0,0);
+  background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(38,77,228,1) 51%, rgba(38,78,229,1) 62%, rgba(41,101,241,1) 94%); 
 }
-    </script>
-</body>
-</html>
+.boot-icon{
+  margin: 100px;
+  
+  width: 200px;
+   height: 100px;
+  border-radius: 1rem;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+  >img{
+      height: 50px;
+  }
+  >p{
+      font-family: 'Koulen', sans-serif;
+      font-size: 30px;
+      padding-top: 16px;
+      text-align:center;
+      color: white;
+  }
+}
+
+.boot-icon:hover{
+  background: rgb(0,0,0);
+background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(106,27,154,1) 49%, rgba(255,255,255,1) 77%, rgba(142,36,170,1) 94%); }
+.js-icon{
+  margin: 100px;
+  
+  width: 200px;
+   height: 100px;
+  border-radius: 1rem;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+  >img{
+      height: 50px;
+  }
+  >p{
+      font-family: 'Koulen', sans-serif;
+      font-size: 30px;
+      padding-top: 16px;
+      text-align:center;
+      color: white;
+      padding-right: 5px;
+  }
+}
+
+.js-icon:hover{
+  background: rgb(145,128,3);
+  background: linear-gradient(144deg, rgba(145,128,3,1) 0%, rgba(255,235,59,1) 51%, rgba(255,238,88,1) 68%);  }
+
+.java-icon{
+  margin: 100px;
+  
+  width: 200px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; 
+  border-radius: 1rem;
+  
+  >img{
+      height: 50px;
+  }
+  >p{
+      font-family: 'Koulen', sans-serif;
+      font-size: 50px;
+      padding-top: 20px;
+      text-align:center;
+      color: white;
+      
+  }
+}
+
+.java-icon:hover{
+  background: rgb(83,130,161);
+background: linear-gradient(144deg, rgba(83,130,161,1) 0%, rgba(148,187,214,1) 38%, rgba(205,224,236,1) 65%, rgba(193,216,230,1) 78%); }
+.py-icon{
+  margin: 100px;
+  
+  width: 200px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+  border-radius: 1rem;
+  >img{
+      height: 50px;
+  }
+  >p{
+      font-family: 'Koulen', sans-serif;
+      font-size: 40px;
+      padding-top: 20px;
+      text-align:center;
+      color: white;
+      
+  }
+}
+
+.py-icon:hover{
+  background: rgb(255,212,59);
+background: linear-gradient(144deg, rgba(255,212,59,1) 0%, rgba(255,232,115,1) 36%, rgba(167,187,151,1) 59%, rgba(75,139,190,1) 75%, rgba(48,105,152,1) 100%);  }
+
+.ora-icon{
+  margin: 100px;
+  
+  width: 200px;
+   
+  border-radius: 1rem;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+  >img{
+      height: 50px;
+  }
+  >p{
+      font-family: 'Koulen', sans-serif;
+      font-size: 40px;
+      padding-top: 20px;
+      text-align:center;
+      color: white;
+      
+  }
+}
+
+.ora-icon:hover{
+  background: rgb(199,70,52);
+background: linear-gradient(144deg, rgba(199,70,52,1) 47%, rgba(240,101,41,1) 76%, rgba(202,63,3,1) 89%);   }
+
+.mongo-icon{
+  margin: 100px;
+  
+  width: 200px;
+   
+  border-radius: 1rem;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+  >img{
+      height: 50px;
+  }
+  >p{
+      font-family: 'Koulen', sans-serif;
+      font-size: 40px;
+      padding-top: 20px;
+      text-align:center;
+      color: white;
+      padding-left: 5px;
+      
+  }
+}
+
+.mongo-icon:hover{
+  background-color: #3F3E42;
+}
+
+.icon p {
+margin-left: -100%;
+opacity: 0;
+transition: margin-left 0.5s ease, opacity 0.5s ease;
+}
+
+.icon img {
+
+margin-right: 10%;
+}
+
+.icon:hover{
+  box-shadow:  -17px -17px 34px #a8a8a8,
+       17px 17px 34px #ffffff;
+}
+
+.icon:hover p {
+margin-left: 0;
+opacity: 1;
+}
+.icon:hover img{
+margin-right: 0;
+}
+
+#skills{
+padding-top: 50px;
+padding-left: 40px;
+background-color: white;
+margin-top: 30px;
+height: auto;
+
+>h2{
+width: 50%;
+border-bottom: 2px solid #fca311;
+padding-bottom: 7px;
+
+}
+>.container{
+  >.row{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 40px;
+  >.col-md-3{
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+}}
+
+
+
+#projects{
+height: auto;
+padding: 50px;
+background-color: #14213d;
+max-width: 100%;
+
+
+-webkit-box-shadow: inset -4px 50px 40px -18px #000000; 
+box-shadow: inset -4px 50px 40px -18px #000000;
+>h2{
+width: 50%;
+border-bottom: 2px solid #fca311;
+padding-bottom: 7px;
+color: white; 
+}
+>.row{
+>.project{
+  padding-top: 50px;
+  >.project{
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+}
+}
+.pcard{
+  transition: transform 0.2s ease-in;
+}
+.pcard:hover{
+  transform: scale(1.1);
+  -webkit-box-shadow: 0px -4px 42px 21px rgba(252,163,17,0.63); 
+box-shadow: 0px -4px 42px 21px rgba(252,163,17,0.63);
+}
+
+#education{
+max-width: 100%;
+padding: 50px;
+-webkit-box-shadow: -4px -28px 21px -9px #000000; 
+box-shadow: -4px -28px 21px -9px #000000;
+>h2{
+width: 50%;
+border-bottom: 2px solid #fca311;
+padding-bottom: 7px;
+}
+>.row{
+padding: 50px;
+>.ed{
+  margin-bottom: 4rem;
+  >.card{
+      margin-right: auto;
+  margin-left: auto;
+ 
+      >img{
+          max-height: 200px;
+          max-width: 200px;
+          margin-left: auto;
+          margin-right: auto;
+          border: none;
+      }
+  }
+}
+}
+.ecard{
+  transition: transform 0.2s ease-in;
+  border: none;
+  
+}
+.ecard:hover{
+  transform: scale(1.1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}     
+.cont{
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+.footer{
+padding: 25px;
+padding-right: 50px;
+-webkit-box-shadow: -4px -28px 21px -9px #000000; 
+box-shadow: -4px -28px 21px -9px #000000;
+display: flex;
+justify-content: space-between;
+a{
+  text-decoration: none;
+  margin-right:  13px;
+}
+>p{margin-bottom: 0;}
+>.copyright{
+  align-self: center;
+}
+}
+iframe{
+max-width: 100vw;
+min-width: 50vh;
+
+}
+#contact{
+  -webkit-box-shadow: inset -4px 50px 40px -18px #000000; 
+box-shadow: inset -4px 50px 40px -18px #000000;
+}
