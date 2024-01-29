@@ -468,7 +468,7 @@ padding: 50px;
   top: 10;
   border-radius: 1rem;
   max-height: 80%;
-  width: 90%;
+  max-width: 90%;
   position: absolute;
 
 }
